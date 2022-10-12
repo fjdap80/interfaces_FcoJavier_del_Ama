@@ -5,7 +5,6 @@
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.image.Image?>
@@ -20,7 +19,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #dde9dd;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #dde9dd;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.ListaControladores">
    <top>
       <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: #78a97e;" BorderPane.alignment="CENTER">
          <padding>
@@ -131,7 +130,7 @@
                   <Insets left="20.0" />
                </GridPane.margin>
             </Label>
-            <TextField promptText="Nombre" GridPane.columnIndex="1">
+            <TextField fx:id="choice1" promptText="Nombre" GridPane.columnIndex="1">
                <GridPane.margin>
                   <Insets left="5.0" right="5.0" />
                </GridPane.margin>
@@ -156,11 +155,6 @@
                   <Insets left="5.0" right="5.0" />
                </GridPane.margin>
             </TextField>
-            <ListView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
-               <GridPane.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </GridPane.margin>
-            </ListView>
             <Label text="Observaciones" GridPane.rowIndex="6">
                <GridPane.margin>
                   <Insets left="20.0" />
@@ -171,6 +165,11 @@
                   <Insets left="5.0" right="5.0" />
                </GridPane.margin>
             </ChoiceBox>
+            <TextField prefHeight="70.0" prefWidth="160.0" promptText="Escribe aquí" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </TextField>
          </children>
          <padding>
             <Insets bottom="20.0" left="100.0" right="-20.0" top="20.0" />
@@ -182,7 +181,7 @@
          <children>
             <ImageView fitHeight="200.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" TilePane.alignment="CENTER_LEFT">
                <image>
-                  <Image url="@../../../../../../../../Desktop/DI/Logo.jpg" />
+                  <Image url="@../../../../images/Logo.jpg" />
                </image>
                <TilePane.margin>
                   <Insets />

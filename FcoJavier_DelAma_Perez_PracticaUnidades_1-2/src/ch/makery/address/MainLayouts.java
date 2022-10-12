@@ -1,54 +1,45 @@
 package ch.makery.address;
 
 import java.io.IOException;
-//esto es una prueba
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 public class MainLayouts extends Application {
-	private Stage primaryStage;
 	private BorderPane rootLayout;
+private Stage primaryStage;
 
 	@Override
 	public void start(Stage primaryStage) {
-		this.primaryStage = primaryStage;
-		this.primaryStage.setTitle("AddressApp");
-		initRootLayout();
-		showPersonOverview();
-	}
-
-	/** Inicializa el diseño de la pantalla principal. */
-	public void initRootLayout() {
 		try {
-
-// Carga el XML con el diseño principal
+			// Carga el diseño del archivo FXML en la variable rootLayout
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(MainLayouts.class.getResource("view/RootLayout.fxml"));
+			loader.setLocation(MainLayouts.class.getResource("view/MainLayouts.fxml"));
 			rootLayout = (BorderPane) loader.load();
 
-// Se añade el diseño principal a la escena
+			// Mostramos la escena del AnchorPane de la variable rootLayot
 			Scene scene = new Scene(rootLayout);
 			primaryStage.setScene(scene);
 			primaryStage.show();
-		} catch (IOException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
-	/** Muestra el diseño de PersonOverview dentro de la pantalla principal */
-	public void showPersonOverview() {
+	/**
+	 * Muestra el diseño de PersonOverview dentro de la pantalla principal
+	 */
+	public void showR() {
 		try {
-// Cargamos el archivo PersonOverview
+			// Cargamos el archivo PersonOverview
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(MainLayouts.class.getResource("view/MainLayouts.fxml"));
-			AnchorPane personOverview = (AnchorPane) loader.load();
-			
-// Se sitúa en el centro del diseño principal
+			loader.setLocation(MainLayouts.class.getResource("view/RootLayout.fxml"));
+			BorderPane personOverview = (BorderPane) loader.load();
+
+			// Se sitúa en el centro del diseño principal
 			rootLayout.setCenter(personOverview);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -57,6 +48,7 @@ public class MainLayouts extends Application {
 
 	/** Returns the main stage. */
 	public Stage getPrimaryStage() {
+
 		return primaryStage;
 	}
 
