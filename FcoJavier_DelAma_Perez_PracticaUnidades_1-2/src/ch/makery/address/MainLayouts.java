@@ -17,7 +17,7 @@ private Stage primaryStage;
 		try {
 			// Carga el diseño del archivo FXML en la variable rootLayout
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(MainLayouts.class.getResource("view/MainLayouts.fxml"));
+			loader.setLocation(MainLayouts.class.getResource("view/RootLayout.fxml"));
 			rootLayout = (BorderPane) loader.load();
 
 			// Mostramos la escena del AnchorPane de la variable rootLayot
@@ -36,7 +36,7 @@ private Stage primaryStage;
 		try {
 			// Cargamos el archivo PersonOverview
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(MainLayouts.class.getResource("view/RootLayout.fxml"));
+			loader.setLocation(MainLayouts.class.getResource("view/MainLayouts.fxml"));
 			BorderPane personOverview = (BorderPane) loader.load();
 
 			// Se sitúa en el centro del diseño principal
