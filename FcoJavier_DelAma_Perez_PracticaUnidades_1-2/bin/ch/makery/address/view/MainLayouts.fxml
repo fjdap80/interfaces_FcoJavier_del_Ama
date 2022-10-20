@@ -2,10 +2,11 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -19,9 +20,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #dde9dd;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.ListaControladores">
+<BorderPane prefHeight="1000.0" prefWidth="1500.0" style="-fx-background-color: #dde9dd;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.ListaControladores">
    <top>
-      <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: #78a97e;" BorderPane.alignment="CENTER">
+      <HBox prefHeight="200.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: #78a97e;" BorderPane.alignment="CENTER">
          <padding>
             <Insets bottom="15.0" left="12.0" right="12.0" top="15.0" />
          </padding>
@@ -47,163 +48,382 @@
             <Insets />
          </BorderPane.margin>
          <padding>
-            <Insets bottom="10.0" left="40.0" right="10.0" top="20.0" />
+            <Insets bottom="10.0" left="60.0" right="10.0" top="20.0" />
          </padding>
          <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Datos Clientes">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Stock de Equipos">
                <font>
-                  <Font name="System Bold" size="14.0" />
+                  <Font name="System Bold" size="24.0" />
                </font>
+               <VBox.margin>
+                  <Insets left="30.0" top="50.0" />
+               </VBox.margin>
             </Text>
-            <Hyperlink text="Sobremesa">
+            <ImageView fitHeight="300.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/Ordenador.jpg" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
                <VBox.margin>
-                  <Insets left="8.0" />
+                  <Insets top="100.0" />
                </VBox.margin>
-            </Hyperlink>
-            <Hyperlink text="Portátiles">
-               <VBox.margin>
-                  <Insets left="8.0" />
-               </VBox.margin>
-            </Hyperlink>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Clientes">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Text>
-            <Hyperlink text="Datos Personales">
-               <VBox.margin>
-                  <Insets left="8.0" />
-               </VBox.margin>
-            </Hyperlink>
-         </children>
-      </VBox>
-   </left>
-   <center>
-      <GridPane gridLinesVisible="true">
-        <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="230.3333740234375" minWidth="10.0" prefWidth="190.6666463216146" />
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="311.0" minWidth="10.0" prefWidth="280.000020345052" />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        </rowConstraints>
-         <BorderPane.margin>
-            <Insets right="30.0" top="10.0" />
-         </BorderPane.margin>
-         <children>
-            <Label text="Nombre">
-               <padding>
-                  <Insets left="20.0" />
-               </padding>
+            </ImageView>
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Guardar" textFill="#eb5353">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
-            </Label>
-            <Label text="Apellidos" GridPane.rowIndex="1">
-               <padding>
-                  <Insets left="20.0" />
-               </padding>
-            </Label>
-            <Label text="Teléfono" GridPane.rowIndex="2">
-               <padding>
-                  <Insets left="20.0" />
-               </padding>
-            </Label>
-            <Label text="DNI" GridPane.rowIndex="3">
-               <padding>
-                  <Insets left="20.0" />
-               </padding>
-            </Label>
-            <Label text="Email" GridPane.rowIndex="4">
-               <GridPane.margin>
-                  <Insets left="20.0" />
-               </GridPane.margin>
-            </Label>
-            <Label text="Provincia" GridPane.rowIndex="5">
-               <GridPane.margin>
-                  <Insets left="20.0" />
-               </GridPane.margin>
-            </Label>
-            <TextField fx:id="choice1" promptText="Nombre" GridPane.columnIndex="1">
-               <GridPane.margin>
-                  <Insets left="5.0" right="5.0" />
-               </GridPane.margin>
-            </TextField>
-            <TextField promptText="Apellidos" GridPane.columnIndex="1" GridPane.rowIndex="1">
-               <GridPane.margin>
-                  <Insets left="5.0" right="5.0" />
-               </GridPane.margin>
-            </TextField>
-            <TextField promptText="Teléfono" GridPane.columnIndex="1" GridPane.rowIndex="2">
-               <GridPane.margin>
-                  <Insets left="5.0" right="5.0" />
-               </GridPane.margin>
-            </TextField>
-            <TextField promptText="Dni" GridPane.columnIndex="1" GridPane.rowIndex="3">
-               <GridPane.margin>
-                  <Insets left="5.0" right="5.0" />
-               </GridPane.margin>
-            </TextField>
-            <TextField promptText="Email" GridPane.columnIndex="1" GridPane.rowIndex="4">
-               <GridPane.margin>
-                  <Insets left="5.0" right="5.0" />
-               </GridPane.margin>
-            </TextField>
-            <Label text="Observaciones" GridPane.rowIndex="6">
-               <GridPane.margin>
-                  <Insets left="20.0" />
-               </GridPane.margin>
-            </Label>
-            <ChoiceBox fx:id="localidad" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
-               <GridPane.margin>
-                  <Insets left="5.0" right="5.0" />
-               </GridPane.margin>
-            </ChoiceBox>
-            <TextField prefHeight="70.0" prefWidth="160.0" promptText="Escribe aquí" GridPane.columnIndex="1" GridPane.rowIndex="6">
-               <GridPane.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </GridPane.margin>
-            </TextField>
+               <VBox.margin>
+                  <Insets left="30.0" top="30.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Página principal" textFill="#eb5353">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" top="30.0" />
+               </VBox.margin>
+            </Button>
          </children>
-         <padding>
-            <Insets bottom="20.0" left="100.0" right="-20.0" top="20.0" />
-         </padding>
-      </GridPane>
-   </center>
+      </VBox>
+   </left>
    <right>
-      <TilePane prefColumns="1" prefHeight="200.0" prefRows="1" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <TilePane prefColumns="1" prefRows="1" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="200.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" TilePane.alignment="CENTER_LEFT">
+            <ImageView fitHeight="300.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" TilePane.alignment="CENTER_LEFT">
                <image>
                   <Image url="@../../../../images/Logo.jpg" />
                </image>
                <TilePane.margin>
-                  <Insets />
+                  <Insets right="100.0" />
                </TilePane.margin>
             </ImageView>
          </children>
          <BorderPane.margin>
-            <Insets right="50.0" top="30.0" />
+            <Insets right="20.0" top="30.0" />
          </BorderPane.margin>
          <effect>
             <InnerShadow />
          </effect>
       </TilePane>
    </right>
-   <bottom>
-      <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0" text="Guardar" textFill="#e24e4e" BorderPane.alignment="CENTER">
-         <BorderPane.margin>
-            <Insets bottom="20.0" />
-         </BorderPane.margin>
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Button>
-   </bottom>
+   <center>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <GridPane gridLinesVisible="true">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="230.3333740234375" minWidth="10.0" prefWidth="190.6666463216146" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="311.0" minWidth="10.0" prefWidth="280.000020345052" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints />
+                <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="103.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="133.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="145.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="143.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="135.0" minHeight="10.0" prefHeight="135.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Sistema Operativo" GridPane.rowIndex="2">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Memoria RAM" GridPane.rowIndex="3">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Almacenamiento" GridPane.rowIndex="4">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Precio" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="choice1" promptText="Nombre" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField promptText="Precio" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <Label text="Observaciones" GridPane.rowIndex="6">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField prefHeight="70.0" prefWidth="160.0" promptText="Escribe aquí" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <Label text="Marca" GridPane.rowIndex="1">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink text="Sobremesa">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Hyperlink>
+                  <HBox GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <children>
+                        <CheckBox mnemonicParsing="false" text="256">
+                           <HBox.margin>
+                              <Insets left="30.0" top="40.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets top="20.0" />
+                           </padding>
+                        </CheckBox>
+                        <CheckBox alignment="TOP_RIGHT" mnemonicParsing="false" text="512">
+                           <HBox.margin>
+                              <Insets left="30.0" top="40.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets top="20.0" />
+                           </padding>
+                        </CheckBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="173.0" layoutY="312.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <CheckBox mnemonicParsing="false" text="SI">
+                           <HBox.margin>
+                              <Insets left="30.0" top="40.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox alignment="TOP_RIGHT" mnemonicParsing="false" text="NO">
+                           <HBox.margin>
+                              <Insets left="30.0" top="40.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </CheckBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="173.0" layoutY="312.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <children>
+                        <CheckBox mnemonicParsing="false" text="8">
+                           <HBox.margin>
+                              <Insets left="30.0" top="40.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox alignment="TOP_RIGHT" mnemonicParsing="false" text="16">
+                           <HBox.margin>
+                              <Insets left="30.0" top="40.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </CheckBox>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="100.0" top="100.0" />
+               </padding>
+            </GridPane>
+            <GridPane alignment="TOP_RIGHT" gridLinesVisible="true">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="230.3333740234375" minWidth="10.0" prefWidth="190.6666463216146" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="311.0" minWidth="10.0" prefWidth="280.000020345052" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="103.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="133.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="145.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="143.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="135.0" minHeight="10.0" prefHeight="135.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="Sistema Operativo" GridPane.rowIndex="2">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Memoria RAM" GridPane.rowIndex="3">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Almacenamiento" GridPane.rowIndex="4">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Precio" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="choice11" promptText="Nombre" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField promptText="Precio" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <Label text="Observaciones" GridPane.rowIndex="6">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField prefHeight="70.0" prefWidth="160.0" promptText="Escribe aquí" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <Label text="Marca" GridPane.rowIndex="1">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink text="Portátiles">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Hyperlink>
+                  <HBox GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <CheckBox alignment="TOP_RIGHT" mnemonicParsing="false" text="SI">
+                           <HBox.margin>
+                              <Insets left="30.0" top="40.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox mnemonicParsing="false" text="NO">
+                           <HBox.margin>
+                              <Insets left="30.0" top="40.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </CheckBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="273.0" layoutY="215.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <children>
+                        <CheckBox alignment="TOP_RIGHT" mnemonicParsing="false" text="256">
+                           <HBox.margin>
+                              <Insets left="30.0" top="40.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets top="20.0" />
+                           </padding>
+                        </CheckBox>
+                        <CheckBox mnemonicParsing="false" text="512">
+                           <HBox.margin>
+                              <Insets left="30.0" top="40.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets top="20.0" />
+                           </padding>
+                        </CheckBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="273.0" layoutY="413.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <children>
+                        <CheckBox alignment="TOP_RIGHT" mnemonicParsing="false" text="8">
+                           <HBox.margin>
+                              <Insets left="30.0" top="40.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox mnemonicParsing="false" text="16">
+                           <HBox.margin>
+                              <Insets left="30.0" top="40.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </CheckBox>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="200.0" top="100.0" />
+               </padding>
+            </GridPane>
+         </children>
+         <padding>
+            <Insets left="50.0" />
+         </padding>
+      </HBox>
+   </center>
 </BorderPane>
