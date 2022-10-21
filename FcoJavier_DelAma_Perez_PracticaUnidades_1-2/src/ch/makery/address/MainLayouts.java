@@ -2,6 +2,8 @@ package ch.makery.address;
 
 import java.io.IOException;
 
+
+import ch.makery.address.view.ListaControladoresPrincipal;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -10,7 +12,7 @@ import javafx.stage.Stage;
 
 public class MainLayouts extends Application {
 	private BorderPane rootLayout;
-private Stage primaryStage;
+	private Stage primaryStage;
 
 	@Override
 	public void start(Stage primaryStage) {
@@ -19,6 +21,9 @@ private Stage primaryStage;
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(MainLayouts.class.getResource("view/RootLayout.fxml"));
 			rootLayout = (BorderPane) loader.load();
+			// Pasamos al controlador de menu el objeto con el BorderPane principal
+			ListaControladoresPrincipal menuController = loader.getController();
+			menuController.setRootLayout(rootLayout);
 
 			// Mostramos la escena del AnchorPane de la variable rootLayot
 			Scene scene = new Scene(rootLayout);

@@ -1,5 +1,6 @@
 package ch.makery.address.view;
 
+import java.awt.event.ActionEvent;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -13,6 +14,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.TableView;
 
 public class ListaControladores {
+	
 	private ObservableList<String> data = FXCollections.observableArrayList();
 	private ObservableList<String> names = FXCollections.observableArrayList();
 
@@ -30,6 +32,8 @@ public class ListaControladores {
 
 	@FXML
 	private TableView<Personas> tablaDatos;
+	
+	
 
 	@FXML
 	void initialize() {
