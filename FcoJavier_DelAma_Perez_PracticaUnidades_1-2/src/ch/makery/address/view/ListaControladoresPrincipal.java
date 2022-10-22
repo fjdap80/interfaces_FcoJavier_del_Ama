@@ -42,6 +42,17 @@ public class ListaControladoresPrincipal {
 
     @FXML
     void abrirFichaEquipos(ActionEvent event) {
+    	
+    	try {
+    		// Cargamos el archivo Controles Dinámicos
+    		FXMLLoader loader = new FXMLLoader();
+    		loader.setLocation(ListaControladoresPrincipal.class.getResource("MainLayoutsEquipos.fxml"));
+    		BorderPane listadoControladoresEquipos = (BorderPane) loader.load();
+    		// Se sitúa en el centro del diseño principal
+    		rootLayout.setCenter(listadoControladoresEquipos);
+    		} catch (IOException e) {
+    		e.printStackTrace();
+    		}
 
     }
 

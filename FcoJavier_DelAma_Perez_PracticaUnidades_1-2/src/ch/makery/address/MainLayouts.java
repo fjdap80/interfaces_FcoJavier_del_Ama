@@ -41,7 +41,7 @@ public class MainLayouts extends Application {
 		try {
 			// Cargamos el archivo PersonOverview
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(MainLayouts.class.getResource("view/MainLayouts.fxml"));
+			loader.setLocation(MainLayouts.class.getResource("view/RootLayout.fxml"));
 			BorderPane personOverview = (BorderPane) loader.load();
 
 			// Se sitúa en el centro del diseño principal
