@@ -37,70 +37,71 @@
         </menus>
       </MenuBar>
    </top>
-   <left>
-      <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: #1c8d93;" BorderPane.alignment="CENTER">
-         <children>
-            <VBox spacing="30.0">
-               <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Acceso empleados">
-                     <font>
-                        <Font name="System Bold" size="18.0" />
-                     </font>
-                     <VBox.margin>
-                        <Insets />
-                     </VBox.margin>
-                  </Text>
-                  <Button fx:id="BotonClientes" mnemonicParsing="false" onAction="#abrirFichaClientes" prefHeight="30.0" prefWidth="100.0" text="Fichas Clientes" />
-                  <Button fx:id="BotonEquipos" mnemonicParsing="false" onAction="#abrirFichaEquipos" prefHeight="30.0" prefWidth="100.0" text="Equipos" />
-               </children>
-               <padding>
-                  <Insets left="50.0" top="50.0" />
-               </padding>
-            </VBox>
-         </children>
-         <padding>
-            <Insets left="20.0" top="20.0" />
-         </padding>
-      </HBox>
-   </left>
-   <right>
-      <TilePane prefColumns="1" prefHeight="200.0" prefRows="1" prefTileHeight="0.0" prefTileWidth="0.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-         <children>
-            <ImageView fitHeight="200.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" TilePane.alignment="CENTER_LEFT">
-               <image>
-                  <Image url="@../../../../images/Logo.jpg" />
-               </image>
-               <TilePane.margin>
-                  <Insets right="50.0" top="300.0" />
-               </TilePane.margin>
-               <effect>
-                  <InnerShadow />
-               </effect>
-            </ImageView>
-         </children>
-         <BorderPane.margin>
-            <Insets right="100.0" top="100.0" />
-         </BorderPane.margin>
-      </TilePane>
-   </right>
-   <center>
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Del Ama´ s System" BorderPane.alignment="CENTER">
-         <font>
-            <Font name="System Bold Italic" size="64.0" />
-         </font>
-      </Text>
-   </center>
-   <bottom>
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Siempre bienvenid@" BorderPane.alignment="CENTER">
-         <font>
-            <Font name="System Bold Italic" size="51.0" />
-         </font>
-         <BorderPane.margin>
-            <Insets bottom="100.0" />
-         </BorderPane.margin>
-      </Text>
-   </bottom>
    <opaqueInsets>
       <Insets />
    </opaqueInsets>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: #1c8d93;">
+               <children>
+                  <VBox spacing="30.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Del Ama´ s System">
+                           <font>
+                              <Font name="System Bold Italic" size="64.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="250.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Acceso empleados">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Text>
+                        <Button fx:id="BotonClientes" mnemonicParsing="false" onAction="#abrirFichaClientes" prefHeight="30.0" prefWidth="100.0" text="Fichas Clientes" />
+                        <Button fx:id="BotonEquipos" mnemonicParsing="false" onAction="#abrirFichaEquipos" prefHeight="30.0" prefWidth="100.0" text="Equipos" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Siempre bienvenid@">
+                           <font>
+                              <Font name="System Bold Italic" size="51.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="300.0" top="50.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                     <padding>
+                        <Insets left="50.0" top="50.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <TilePane prefColumns="1" prefHeight="200.0" prefRows="1" prefTileHeight="0.0" prefTileWidth="0.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="200.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" TilePane.alignment="CENTER_LEFT">
+                           <image>
+                              <Image url="@../../../../images/Logo.jpg" />
+                           </image>
+                           <TilePane.margin>
+                              <Insets right="10.0" top="500.0" />
+                           </TilePane.margin>
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                        </ImageView>
+                     </children>
+                  </TilePane>
+               </children>
+               <padding>
+                  <Insets left="20.0" top="20.0" />
+               </padding>
+            </HBox>
+         </children>
+      </HBox>
+   </center>
 </BorderPane>

@@ -21,36 +21,54 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane prefHeight="1000.0" prefWidth="1500.0" style="-fx-background-color: #dde9dd;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.ListaControladores">
-   <top>
-      <HBox prefHeight="200.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: #78a97e;" BorderPane.alignment="CENTER">
-         <padding>
-            <Insets bottom="15.0" left="12.0" right="12.0" top="15.0" />
-         </padding>
+<BorderPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #dde9dd;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.ListaControladores">
+   <right>
+      <HBox BorderPane.alignment="CENTER">
          <children>
-            <BorderPane HBox.hgrow="ALWAYS">
+            <TableView fx:id="tablaDatos">
+              <columns>
+                  <TableColumn fx:id="ColNombre" prefWidth="75.0" text="Nombre" />
+                  <TableColumn fx:id="colApellidos" prefWidth="75.0" text="Apellidos" />
+                  <TableColumn fx:id="colEmail" prefWidth="75.0" text="Email" />
+                <TableColumn fx:id="colLocalidad" prefWidth="75.0" text="Localidad" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
                <HBox.margin>
-                  <Insets left="100.0" />
+                  <Insets bottom="400.0" left="50.0" right="400.0" top="100.0" />
                </HBox.margin>
-               <center>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Del Ama´ s System">
-                     <font>
-                        <Font name="System Bold Italic" size="50.0" />
-                     </font>
-                  </Text>
-               </center>
-            </BorderPane>
+            </TableView>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <TilePane prefColumns="1" prefRows="1">
+               <children>
+                  <ImageView fitHeight="300.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" TilePane.alignment="CENTER_LEFT">
+                     <image>
+                        <Image url="@../../../../images/Logo.jpg" />
+                     </image>
+                     <TilePane.margin>
+                        <Insets />
+                     </TilePane.margin>
+                  </ImageView>
+               </children>
+               <effect>
+                  <InnerShadow />
+               </effect>
+               <HBox.margin>
+                  <Insets right="100.0" />
+               </HBox.margin>
+            </TilePane>
          </children>
-      </HBox>
-   </top>
-   <left>
-      <VBox prefHeight="200.0" prefWidth="200.0" spacing="8.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets left="50.0" />
+         </padding>
          <BorderPane.margin>
             <Insets />
          </BorderPane.margin>
-         <padding>
-            <Insets bottom="10.0" left="60.0" right="10.0" top="20.0" />
-         </padding>
+      </HBox>
+   </right>
+   <left>
+      <VBox prefHeight="100.0" prefWidth="100.0" spacing="8.0" BorderPane.alignment="CENTER">
          <children>
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fichas clientes">
                <font>
@@ -65,7 +83,7 @@
                   <Image url="@../../../../images/ClienteBueno.jpg" />
                </image>
                <VBox.margin>
-                  <Insets left="20.0" top="100.0" />
+                  <Insets bottom="100.0" left="20.0" top="100.0" />
                </VBox.margin>
             </ImageView>
             <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Guardar" textFill="#eb5353">
@@ -73,7 +91,7 @@
                   <Font name="System Bold" size="12.0" />
                </font>
                <VBox.margin>
-                  <Insets left="100.0" top="30.0" />
+                  <Insets left="100.0" />
                </VBox.margin>
             </Button>
             <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Página principal" textFill="#eb5353">
@@ -81,156 +99,141 @@
                   <Font name="System Bold" size="12.0" />
                </font>
                <VBox.margin>
-                  <Insets left="100.0" top="30.0" />
+                  <Insets left="100.0" />
                </VBox.margin>
             </Button>
          </children>
+         <padding>
+            <Insets bottom="100.0" top="50.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets top="50.0" />
+         </BorderPane.margin>
       </VBox>
    </left>
-   <right>
-      <TilePane prefColumns="1" prefRows="1" BorderPane.alignment="CENTER">
-         <children>
-            <ImageView fitHeight="300.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" TilePane.alignment="CENTER_LEFT">
-               <image>
-                  <Image url="@../../../../images/Logo.jpg" />
-               </image>
-               <TilePane.margin>
-                  <Insets right="100.0" />
-               </TilePane.margin>
-            </ImageView>
-         </children>
-         <BorderPane.margin>
-            <Insets right="20.0" top="30.0" />
-         </BorderPane.margin>
-         <effect>
-            <InnerShadow />
-         </effect>
-      </TilePane>
-   </right>
    <center>
-      <HBox BorderPane.alignment="CENTER">
+      <GridPane gridLinesVisible="true" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="230.3333740234375" minWidth="10.0" prefWidth="190.6666463216146" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="311.0" minWidth="10.0" prefWidth="280.000020345052" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints />
+          <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="103.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="133.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="145.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="143.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="135.0" minHeight="10.0" prefHeight="135.0" vgrow="SOMETIMES" />
+        </rowConstraints>
          <children>
-            <GridPane gridLinesVisible="true">
-              <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="230.3333740234375" minWidth="10.0" prefWidth="190.6666463216146" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="311.0" minWidth="10.0" prefWidth="280.000020345052" />
-              </columnConstraints>
-              <rowConstraints>
-                <RowConstraints />
-                <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="103.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="133.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="145.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="143.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="135.0" minHeight="10.0" prefHeight="135.0" vgrow="SOMETIMES" />
-              </rowConstraints>
-               <children>
-                  <Label text="Apellidos" GridPane.rowIndex="2">
-                     <padding>
-                        <Insets left="20.0" />
-                     </padding>
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label text="Teléfono" GridPane.rowIndex="3">
-                     <padding>
-                        <Insets left="20.0" />
-                     </padding>
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label text="Email" GridPane.rowIndex="4">
-                     <padding>
-                        <Insets left="20.0" />
-                     </padding>
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label text="Localidad" GridPane.rowIndex="5">
-                     <GridPane.margin>
-                        <Insets left="20.0" />
-                     </GridPane.margin>
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                  </Label>
-                  <TextField promptText="Nombre" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <GridPane.margin>
-                        <Insets left="5.0" right="5.0" />
-                     </GridPane.margin>
-                  </TextField>
-                  <Label text="Observaciones" GridPane.rowIndex="6">
-                     <GridPane.margin>
-                        <Insets left="20.0" />
-                     </GridPane.margin>
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                  </Label>
-                  <TextField prefHeight="70.0" prefWidth="160.0" promptText="Escribe aquí" GridPane.columnIndex="1" GridPane.rowIndex="6">
-                     <GridPane.margin>
-                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                     </GridPane.margin>
-                  </TextField>
-                  <Label text="Nombre" GridPane.rowIndex="1">
-                     <padding>
-                        <Insets left="20.0" />
-                     </padding>
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                  </Label>
-                  <Hyperlink text="Alta Cliente">
-                     <font>
-                        <Font name="System Bold Italic" size="18.0" />
-                     </font>
-                  </Hyperlink>
-                  <TextField promptText="Apellidos" GridPane.columnIndex="1" GridPane.rowIndex="2">
-                     <GridPane.margin>
-                        <Insets left="5.0" right="5.0" />
-                     </GridPane.margin>
-                  </TextField>
-                  <TextField promptText="Teléfono" GridPane.columnIndex="1" GridPane.rowIndex="3">
-                     <GridPane.margin>
-                        <Insets left="5.0" right="5.0" />
-                     </GridPane.margin>
-                  </TextField>
-                  <TextField promptText="Email" GridPane.columnIndex="1" GridPane.rowIndex="4">
-                     <GridPane.margin>
-                        <Insets left="5.0" right="5.0" />
-                     </GridPane.margin>
-                  </TextField>
-                  <ChoiceBox fx:id="localidad" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
-                     <GridPane.margin>
-                        <Insets left="10.0" right="5.0" />
-                     </GridPane.margin>
-                  </ChoiceBox>
-               </children>
+            <Label text="Apellidos" GridPane.rowIndex="2">
                <padding>
-                  <Insets left="100.0" top="100.0" />
+                  <Insets left="20.0" />
                </padding>
-               <opaqueInsets>
-                  <Insets right="50.0" />
-               </opaqueInsets>
-            </GridPane>
-            <TableView fx:id="tablaDatos" prefHeight="200.0" prefWidth="200.0">
-              <columns>
-                  <TableColumn prefWidth="75.0" text="Nombre" />
-                  <TableColumn prefWidth="75.0" text="Apellidos" />
-                  <TableColumn prefWidth="75.0" text="Email" />
-                <TableColumn prefWidth="75.0" text="Localidad" />
-              </columns>
-               <columnResizePolicy>
-                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
-               </columnResizePolicy>
-            </TableView>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Teléfono" GridPane.rowIndex="3">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Email" GridPane.rowIndex="4">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Localidad" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField promptText="Nombre" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="5.0" right="5.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label text="Observaciones" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField prefHeight="70.0" prefWidth="160.0" promptText="Escribe aquí" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label text="Nombre" GridPane.rowIndex="1">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Hyperlink text="Alta Cliente">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Hyperlink>
+            <TextField promptText="Apellidos" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="5.0" right="5.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField promptText="Teléfono" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="5.0" right="5.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField promptText="Email" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets left="5.0" right="5.0" />
+               </GridPane.margin>
+            </TextField>
+            <ChoiceBox fx:id="localidad" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets left="10.0" right="5.0" />
+               </GridPane.margin>
+            </ChoiceBox>
          </children>
          <padding>
-            <Insets left="50.0" />
+            <Insets left="100.0" top="100.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets right="50.0" />
+         </opaqueInsets>
+      </GridPane>
+   </center>
+   <top>
+      <HBox BorderPane.alignment="TOP_RIGHT">
+         <BorderPane.margin>
+            <Insets left="500.0" top="50.0" />
+         </BorderPane.margin>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Del Ama´ s System">
+               <font>
+                  <Font name="System Bold Italic" size="50.0" />
+               </font>
+            </Text>
+         </children>
+         <padding>
+            <Insets left="600.0" />
          </padding>
       </HBox>
-   </center>
+   </top>
 </BorderPane>

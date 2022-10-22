@@ -1,53 +1,63 @@
 package ch.makery.address.view;
 
-import java.awt.event.ActionEvent;
 import java.net.URL;
 import java.util.ResourceBundle;
-
 import ch.makery.address.model.Personas;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.Separator;
-import javafx.scene.control.TextField;
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class ListaControladores {
-	
-	private ObservableList<String> data = FXCollections.observableArrayList();
-	private ObservableList<String> names = FXCollections.observableArrayList();
 
-	@FXML
-	private ResourceBundle resources;
+    @FXML
+    private ResourceBundle resources;
 
-	@FXML
-	private URL location;
+    @FXML
+    private URL location;
 
-	@FXML
-	private TextField choice1;
+    @FXML
+    private TableColumn<Personas,String > ColNombre;
 
-	@FXML
-	private ChoiceBox<Object> localidad;
+    @FXML
+    private TableColumn<Personas,String> colApellidos;
 
-	@FXML
-	private TableView<Personas> tablaDatos;
-	
-	
+    @FXML
+    private TableColumn<Personas,String> colEmail;
 
-	@FXML
-	void initialize() {
+    @FXML
+    private TableColumn<Personas,String> colLocalidad;
 
-		localidad.setItems(FXCollections.observableArrayList("Madrid", "Barcelona", "Andalucía", "Galicia"));
-		localidad.setValue("Seleccionar");
+    @FXML
+    private ChoiceBox<?> localidad;
 
-		for (int i = 0; i < 10; i++) {
-			data.add("Indeterminate(pick a choice)");
+    @FXML
+    private TableView<Personas> tablaDatos;
 
-		}
+    @FXML
+    void initialize() {
+        assert ColNombre != null : "fx:id=\"ColNombre\" was not injected: check your FXML file 'MainLayoutsClientes.fxml'.";
+        assert colApellidos != null : "fx:id=\"colApellidos\" was not injected: check your FXML file 'MainLayoutsClientes.fxml'.";
+        assert colEmail != null : "fx:id=\"colEmail\" was not injected: check your FXML file 'MainLayoutsClientes.fxml'.";
+        assert colLocalidad != null : "fx:id=\"colLocalidad\" was not injected: check your FXML file 'MainLayoutsClientes.fxml'.";
+        assert localidad != null : "fx:id=\"localidad\" was not injected: check your FXML file 'MainLayoutsClientes.fxml'.";
+        assert tablaDatos != null : "fx:id=\"tablaDatos\" was not injected: check your FXML file 'MainLayoutsClientes.fxml'.";
 
-		assert localidad != null : "fx:id=\"localidad\" was not injected: check your FXML file 'MainLayouts.fxml'.";
-		assert tablaDatos != null: "fx:id=\"tablaDatos\" was not injected: check your FXML file 'MainLayoutsClientes.fxml'.";
-	}
+        ObservableList<Personas> data = FXCollections.observableArrayList(
+       		 new Personas("Jacob", "Smith","Bruno@gmail.com","Aranjuez"),
+       		 new Personas("Mariano", "Ortega","Mariano@gmail.com","Sevilla"),
+       		 new Personas("Roberto", "Jimenez","Roberto@gsumail.com","Albacete"),
+       		 new Personas("Pepito", "Garcia","Pepito@gsumail.com","Valencia"),
+       		 new Personas("Rosario", "Suarez","Rosario@gsumail.com","Romangordo")
+       		 );
+       
+       		 // Se rellena la tabla con objetos de la clase Person
+       		 tablaDatos.setItems(data);
+       		} 
+    }
+    
 
-}
+

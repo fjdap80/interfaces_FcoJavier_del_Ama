@@ -6,30 +6,42 @@ import javafx.beans.property.SimpleStringProperty;
 public class Personas {
 	private final SimpleStringProperty firstName;
 	private final SimpleStringProperty lastName;
+	private final SimpleStringProperty email;
+	private final SimpleStringProperty localidad;
+	
 	
 
-	public Personas(String fName, String lName) {
+	public Personas(String fName, String lName,String email,String localidad) {
 		this.firstName = new SimpleStringProperty(fName);
 		this.lastName = new SimpleStringProperty(lName);
+		this.email = new SimpleStringProperty(email);
+		this.localidad = new SimpleStringProperty(localidad);
 		
 	}
 
-	public String getFirstName() {
-		return firstName.get();
+
+
+	public SimpleStringProperty getFirstName() {
+		return firstName;
 	}
 
-	public void setFirstName(String fName) {
-		firstName.set(fName);
+
+
+	public SimpleStringProperty getLastName() {
+		return lastName;
 	}
 
-	public String getLastName() {
-		return lastName.get();
+
+
+	public SimpleStringProperty getEmail() {
+		return email;
 	}
 
-	public void setLastName(String lName) {
-		lastName.set(lName);
+
+
+	public SimpleStringProperty getLocalidad() {
+		return localidad;
 	}
 
 	
-
 }
