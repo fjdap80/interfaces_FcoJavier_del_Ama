@@ -36,6 +36,7 @@ public class ListaControladores {
 
     @FXML
     private TableView<Personas> tablaDatos;
+    
 
     @FXML
     void initialize() {

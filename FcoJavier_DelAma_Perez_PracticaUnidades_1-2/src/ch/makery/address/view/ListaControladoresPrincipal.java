@@ -7,23 +7,41 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuItem;
 import javafx.scene.layout.BorderPane;
 
 public class ListaControladoresPrincipal {
 	
-	private BorderPane rootLayout;
-
+	private BorderPane rootLayout;    
+   
     @FXML
     private ResourceBundle resources;
 
     @FXML
     private URL location;
+   
+    @FXML
+    private MenuItem BotonClientes;
 
     @FXML
-    private Button BotonClientes;
-
+    private Menu BotonEquipos;
+    
+    
     @FXML
-    private Button BotonEquipos;
+    void initialize() {
+        assert BotonClientes != null : "fx:id=\"BotonClientes\" was not injected: check your FXML file 'RootLayout.fxml'.";
+        assert BotonEquipos != null : "fx:id=\"BotonEquipos\" was not injected: check your FXML file 'RootLayout.fxml'.";
+
+    }
+
+
+
+
+   
+
+   
+
 
     @FXML
     void abrirFichaClientes(ActionEvent event) {
@@ -56,12 +74,7 @@ public class ListaControladoresPrincipal {
 
     }
 
-    @FXML
-    void initialize() {
-        assert BotonClientes != null : "fx:id=\"BotonClientes\" was not injected: check your FXML file 'RootLayout.fxml'.";
-        assert BotonEquipos != null : "fx:id=\"BotonEquipos\" was not injected: check your FXML file 'RootLayout.fxml'.";
-
-    }
+ 
    
 	public void setRootLayout(BorderPane rootLayout) {
 		this.rootLayout=rootLayout;

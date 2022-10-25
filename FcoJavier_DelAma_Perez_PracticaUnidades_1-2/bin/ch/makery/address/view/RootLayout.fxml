@@ -19,21 +19,18 @@
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
-          <Menu mnemonicParsing="false" text="Conócenos">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
-            </items>
+          <Menu mnemonicParsing="false" text="Menú">
+               <items>
+                  <MenuItem fx:id="BotonClientes" mnemonicParsing="false" onAction="#abrirFichaClientes" text="Clientes" />
+                  <Menu mnemonicParsing="false" text="Equipos">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Sobremesa" />
+                        <MenuItem mnemonicParsing="false" text="Portátiles" />
+                    </items>
+                  </Menu>
+               </items>
           </Menu>
-          <Menu mnemonicParsing="false">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Delete" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Intrucciones">
-            <items>
-              <MenuItem mnemonicParsing="false" text="About" />
-            </items>
-          </Menu>
+          <Menu mnemonicParsing="false" text="Intrucciones" />
         </menus>
       </MenuBar>
    </top>
@@ -63,8 +60,8 @@
                               <Insets />
                            </VBox.margin>
                         </Text>
-                        <Button fx:id="BotonClientes" mnemonicParsing="false" onAction="#abrirFichaClientes" prefHeight="30.0" prefWidth="100.0" text="Fichas Clientes" />
-                        <Button fx:id="BotonEquipos" mnemonicParsing="false" onAction="#abrirFichaEquipos" prefHeight="30.0" prefWidth="100.0" text="Equipos" />
+                        <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Fichas Clientes" />
+                        <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Equipos" />
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Siempre bienvenid@">
                            <font>
                               <Font name="System Bold Italic" size="51.0" />
