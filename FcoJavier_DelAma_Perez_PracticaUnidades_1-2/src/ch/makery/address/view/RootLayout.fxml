@@ -21,7 +21,7 @@
         <menus>
           <Menu mnemonicParsing="false" text="Conócenos">
             <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
+              <MenuItem fx:id="abrirClientes" mnemonicParsing="false" onAction="#abrirClientes" text="Close" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false">
