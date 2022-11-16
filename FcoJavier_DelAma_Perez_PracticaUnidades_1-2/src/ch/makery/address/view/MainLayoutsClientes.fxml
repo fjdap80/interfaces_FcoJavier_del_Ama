@@ -23,7 +23,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane prefHeight="450.0" prefWidth="750.0" style="-fx-background-color: #dde9dd;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.ListaControladores">
+<BorderPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #dde9dd;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.ListaControladores">
    <right>
       <HBox BorderPane.alignment="CENTER">
          <children>
@@ -72,12 +72,17 @@
             </ImageView>
             <VBox spacing="10.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Guardar" textFill="#eb5353">
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Nuevo" textFill="#f20606">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Página principal" textFill="#eb5353">
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Editar" textFill="#f20606">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Borrar" textFill="#f20606">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
