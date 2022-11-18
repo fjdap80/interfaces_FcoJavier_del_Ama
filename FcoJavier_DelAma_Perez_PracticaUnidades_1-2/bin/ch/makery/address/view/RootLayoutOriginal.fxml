@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1c8d93;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.PersonOverviewControllerPrincipal">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Conócenos">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Intrucciones">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: #1c8d93;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox spacing="30.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Acceso empleados">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Text>
+                  <Button fx:id="BotonClientes" mnemonicParsing="false" onAction="#abrirFichaClientes" prefHeight="30.0" prefWidth="100.0" text="Fichas Clientes" />
+                  <Button fx:id="BotonEquipos" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Equipos" />
+               </children>
+               <padding>
+                  <Insets left="50.0" top="50.0" />
+               </padding>
+            </VBox>
+         </children>
+         <padding>
+            <Insets left="20.0" top="20.0" />
+         </padding>
+      </HBox>
+   </left>
+   <right>
+      <TilePane prefColumns="1" prefHeight="200.0" prefRows="1" prefTileHeight="0.0" prefTileWidth="0.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" TilePane.alignment="CENTER_LEFT">
+               <image>
+                  <Image url="@../../../../images/Logo.jpg" />
+               </image>
+               <TilePane.margin>
+                  <Insets right="50.0" top="300.0" />
+               </TilePane.margin>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </ImageView>
+         </children>
+         <BorderPane.margin>
+            <Insets right="100.0" top="100.0" />
+         </BorderPane.margin>
+      </TilePane>
+   </right>
+   <center>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Del Ama´ s System" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="64.0" />
+         </font>
+      </Text>
+   </center>
+   <bottom>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Siempre bienvenid@" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="51.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="100.0" />
+         </BorderPane.margin>
+      </Text>
+   </bottom>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</BorderPane>
