@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1c8d93;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Menú">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Clientes" />
+                  <Menu mnemonicParsing="false" text="Equipos">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Sobremesa" />
+                        <MenuItem mnemonicParsing="false" text="Portátiles" />
+                    </items>
+                  </Menu>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Instrucciones">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Ayuda" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Inicio">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Inicio" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Del Ama's System" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="60.0" />
+         </font>
+      </Text>
+   </center>
+   <bottom>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Siempre bienvenid@s" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="10.0" />
+         </BorderPane.margin>
+      </Text>
+   </bottom>
+</BorderPane>
