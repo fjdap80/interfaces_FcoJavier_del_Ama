@@ -53,7 +53,7 @@ public class MainApp extends Application {
 
 		initRootLayout();
 
-		showPersonOverview();
+		//showPersonOverview();
 	}
 
 	/**

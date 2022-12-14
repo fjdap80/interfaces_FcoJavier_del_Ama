@@ -12,6 +12,7 @@ import javafx.scene.control.MenuItem;
 import javafx.scene.layout.BorderPane;
 
 public class RootLayoutController {
+	@FXML
 	private BorderPane rootLayout;
 
 	@FXML

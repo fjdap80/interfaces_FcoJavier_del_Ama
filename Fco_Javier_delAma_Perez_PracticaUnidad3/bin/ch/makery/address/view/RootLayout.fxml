@@ -8,14 +8,13 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<BorderPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1c8d93;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18">
+<BorderPane fx:id="rootLayout" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1c8d93;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.RootLayoutController">
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
           <Menu mnemonicParsing="false" text="Menú">
             <items>
-              <MenuItem mnemonicParsing="false" text="Clientes" />
+              <MenuItem mnemonicParsing="false" onAction="#abrirFichaClientes" text="Clientes" />
                   <Menu mnemonicParsing="false" text="Equipos">
                     <items>
                       <MenuItem mnemonicParsing="false" text="Sobremesa" />
