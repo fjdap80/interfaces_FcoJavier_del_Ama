@@ -9,6 +9,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuItem;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 
 public class RootLayoutController {
@@ -55,7 +56,7 @@ public class RootLayoutController {
 			// Cargamos el archivo Controles Dinámicos
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(RootLayoutController.class.getResource("PersonOverview.fxml"));
-			BorderPane listadoControladoresClientes = (BorderPane) loader.load();
+			AnchorPane listadoControladoresClientes = (AnchorPane) loader.load();
 			// Se sitúa en el centro del diseño principal
 			rootLayout.setCenter(listadoControladoresClientes);
 		} catch (IOException e) {
@@ -84,10 +85,10 @@ public class RootLayoutController {
 	void abrirTutorial(ActionEvent event) {
 
 		try {
-			System.out.println("hola hola");
+			
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(RootLayoutController.class.getResource("Tutorial.fxml"));
-			BorderPane Tutorial = (BorderPane) loader.load();
+			loader.setLocation(RootLayoutController.class.getResource("IntruccionesAnchorPane.fxml"));
+			AnchorPane Tutorial = (AnchorPane) loader.load();
 
 			rootLayout.setCenter(Tutorial);
 		} catch (IOException e) {
