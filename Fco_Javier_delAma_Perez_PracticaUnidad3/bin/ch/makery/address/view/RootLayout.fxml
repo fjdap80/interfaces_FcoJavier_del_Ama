@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
@@ -14,11 +15,11 @@
         <menus>
           <Menu mnemonicParsing="false" text="Menú">
             <items>
-              <MenuItem mnemonicParsing="false" onAction="#abrirFichaClientes" text="Clientes" />
+              <MenuItem mnemonicParsing="false" onAction="#abrirDatosClientes" text="Clientes" />
                   <Menu mnemonicParsing="false" text="Equipos">
                     <items>
-                      <MenuItem mnemonicParsing="false" text="Sobremesa" />
-                        <MenuItem mnemonicParsing="false" text="Portátiles" />
+                      <MenuItem mnemonicParsing="false" onAction="#abrirFichaEquipos" text="Sobremesa" />
+                        <MenuItem mnemonicParsing="false" onAction="#abrirFichaEquipos" text="Portátiles" />
                     </items>
                   </Menu>
             </items>
@@ -37,7 +38,7 @@
       </MenuBar>
    </top>
    <center>
-      <VBox BorderPane.alignment="CENTER">
+      <VBox alignment="TOP_CENTER" spacing="60.0" BorderPane.alignment="CENTER">
          <children>
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Del Ama's System">
                <font>
@@ -50,6 +51,9 @@
                </font>
             </Text>
          </children>
+         <BorderPane.margin>
+            <Insets top="100.0" />
+         </BorderPane.margin>
       </VBox>
    </center>
 </BorderPane>

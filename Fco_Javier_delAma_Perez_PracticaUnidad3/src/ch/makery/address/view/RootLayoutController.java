@@ -7,10 +7,13 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuItem;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 
 public class RootLayoutController {
 	@FXML
@@ -72,9 +75,24 @@ public class RootLayoutController {
 
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(RootLayoutController.class.getResource("MainLayoutsEquipos.fxml"));
-			BorderPane listadoControladoresEquipos = (BorderPane) loader.load();
+			AnchorPane EquiposSobremesa = (AnchorPane) loader.load();
 
-			rootLayout.setCenter(listadoControladoresEquipos);
+			rootLayout.setCenter(EquiposSobremesa);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+	}
+	@FXML
+	void abrirDatosClientes(ActionEvent event) {
+
+		try {
+			
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(RootLayoutController.class.getResource("DatosClientes.fxml"));
+			BorderPane DatosClientes = (BorderPane) loader.load();
+
+			rootLayout.setCenter(DatosClientes);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -87,8 +105,8 @@ public class RootLayoutController {
 		try {
 			
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(RootLayoutController.class.getResource("IntruccionesAnchorPane.fxml"));
-			AnchorPane Tutorial = (AnchorPane) loader.load();
+			loader.setLocation(RootLayoutController.class.getResource("Instrucciones.fxml"));
+			BorderPane Tutorial = (BorderPane) loader.load();
 
 			rootLayout.setCenter(Tutorial);
 		} catch (IOException e) {
@@ -112,21 +130,16 @@ public class RootLayoutController {
 		}
 
 	}
-
+	
 	@FXML
-	void abrirAyuda(ActionEvent event) {
-		try {
+	void abrirMensajeAlerta(ActionEvent event) {
 
-			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(RootLayoutController.class.getResource("Tutorial.fxml"));
-			BorderPane Ayuda = (BorderPane) loader.load();
-
-			rootLayout.setCenter(Ayuda);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+			
 
 	}
+
+
+	
 
 	public void setRootLayout(BorderPane rootLayout) {
 		this.rootLayout = rootLayout;

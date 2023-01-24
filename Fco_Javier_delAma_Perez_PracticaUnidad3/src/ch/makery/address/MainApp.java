@@ -80,7 +80,7 @@ public class MainApp extends Application {
 	/**
 	 * Shows the person overview inside the root layout.
 	 */
-	public void showPersonOverview() {
+	/*public void showPersonOverview() {
 	    try {
 	        // Load person overview.
 	        FXMLLoader loader = new FXMLLoader();
@@ -96,8 +96,7 @@ public class MainApp extends Application {
 
 	    } catch (IOException e) {
 	        e.printStackTrace();
-	    }
-	}
+	    }*/
 	public boolean showPersonEditDialog(Person person) {
 	    try {
 	        // Load the fxml file and create a new stage for the popup dialog.
