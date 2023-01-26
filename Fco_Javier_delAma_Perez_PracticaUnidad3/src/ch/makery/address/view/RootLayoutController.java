@@ -53,12 +53,12 @@ public class RootLayoutController {
 
 	}
 
-	@FXML
+	/*@FXML
 	void abrirFichaClientes(ActionEvent event) {
 		try {
 			// Cargamos el archivo Controles Dinámicos
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(RootLayoutController.class.getResource("PersonOverview.fxml"));
+			loader.setLocation(RootLayoutController.class.getResource("FormularioClientes.fxml"));
 			AnchorPane listadoControladoresClientes = (AnchorPane) loader.load();
 			// Se sitúa en el centro del diseño principal
 			rootLayout.setCenter(listadoControladoresClientes);
@@ -66,7 +66,7 @@ public class RootLayoutController {
 			e.printStackTrace();
 		}
 
-	}
+	}*/
 
 	@FXML
 	void abrirFichaEquipos(ActionEvent event) {
@@ -74,22 +74,22 @@ public class RootLayoutController {
 		try {
 
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(RootLayoutController.class.getResource("MainLayoutsEquipos.fxml"));
-			AnchorPane EquiposSobremesa = (AnchorPane) loader.load();
+			loader.setLocation(RootLayoutController.class.getResource("FormularioEquipos.fxml"));
+			AnchorPane Equipos = (AnchorPane) loader.load();
 
-			rootLayout.setCenter(EquiposSobremesa);
+			rootLayout.setCenter(Equipos);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 
 	}
 	@FXML
-	void abrirDatosClientes(ActionEvent event) {
+	void abrirFormularioClientes(ActionEvent event) {
 
 		try {
 			
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(RootLayoutController.class.getResource("DatosClientes.fxml"));
+			loader.setLocation(RootLayoutController.class.getResource("FormularioClientes.fxml"));
 			BorderPane DatosClientes = (BorderPane) loader.load();
 
 			rootLayout.setCenter(DatosClientes);

@@ -15,7 +15,7 @@
         <menus>
           <Menu mnemonicParsing="false" text="Menú">
             <items>
-              <MenuItem mnemonicParsing="false" onAction="#abrirDatosClientes" text="Clientes" />
+              <MenuItem mnemonicParsing="false" onAction="#abrirFormularioClientes" text="Clientes" />
                   <Menu mnemonicParsing="false" text="Equipos">
                     <items>
                       <MenuItem mnemonicParsing="false" onAction="#abrirFichaEquipos" text="Sobremesa" />

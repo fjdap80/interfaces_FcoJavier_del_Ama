@@ -11,9 +11,9 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
 
-
-<BorderPane prefHeight="300.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18">
+<BorderPane prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
    <left>
       <SplitPane dividerPositions="0.9847972972972975" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
         <items>
@@ -68,10 +68,14 @@
       </GridPane>
    </center>
    <right>
-      <Button mnemonicParsing="false" text="Añadir" BorderPane.alignment="CENTER">
+      <VBox alignment="CENTER" BorderPane.alignment="CENTER">
          <BorderPane.margin>
             <Insets right="10.0" />
          </BorderPane.margin>
-      </Button>
+         <children>
+            <Button mnemonicParsing="false" text="Añadir" />
+            <Button mnemonicParsing="false" text="Button" />
+         </children>
+      </VBox>
    </right>
 </BorderPane>
