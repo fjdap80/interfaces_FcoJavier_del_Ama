@@ -53,20 +53,17 @@ public class RootLayoutController {
 
 	}
 
-	/*@FXML
-	void abrirFichaClientes(ActionEvent event) {
-		try {
-			// Cargamos el archivo Controles Dinámicos
-			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(RootLayoutController.class.getResource("FormularioClientes.fxml"));
-			AnchorPane listadoControladoresClientes = (AnchorPane) loader.load();
-			// Se sitúa en el centro del diseño principal
-			rootLayout.setCenter(listadoControladoresClientes);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
-	}*/
+	/*
+	 * @FXML void abrirFichaClientes(ActionEvent event) { try { // Cargamos el
+	 * archivo Controles Dinámicos FXMLLoader loader = new FXMLLoader();
+	 * loader.setLocation(RootLayoutController.class.getResource(
+	 * "FormularioClientes.fxml")); AnchorPane listadoControladoresClientes =
+	 * (AnchorPane) loader.load(); // Se sitúa en el centro del diseño principal
+	 * rootLayout.setCenter(listadoControladoresClientes); } catch (IOException e) {
+	 * e.printStackTrace(); }
+	 * 
+	 * }
+	 */
 
 	@FXML
 	void abrirFichaEquipos(ActionEvent event) {
@@ -83,11 +80,12 @@ public class RootLayoutController {
 		}
 
 	}
+
 	@FXML
 	void abrirFormularioClientes(ActionEvent event) {
 
 		try {
-			
+
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(RootLayoutController.class.getResource("FormularioClientes.fxml"));
 			BorderPane DatosClientes = (BorderPane) loader.load();
@@ -103,7 +101,7 @@ public class RootLayoutController {
 	void abrirTutorial(ActionEvent event) {
 
 		try {
-			
+
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(RootLayoutController.class.getResource("Instrucciones.fxml"));
 			BorderPane Tutorial = (BorderPane) loader.load();
@@ -130,16 +128,21 @@ public class RootLayoutController {
 		}
 
 	}
-	
-	@FXML
-	void abrirMensajeAlerta(ActionEvent event) {
 
-			
+	@FXML
+	void abrirGrafico(ActionEvent event) {
+		try {
+
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(RootLayoutController.class.getResource("Grafico.fxml"));
+			AnchorPane Inicio = (AnchorPane) loader.load();
+
+			rootLayout.setCenter(Inicio);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
 	}
-
-
-	
 
 	public void setRootLayout(BorderPane rootLayout) {
 		this.rootLayout = rootLayout;
@@ -148,4 +151,3 @@ public class RootLayoutController {
 	}
 
 }
-

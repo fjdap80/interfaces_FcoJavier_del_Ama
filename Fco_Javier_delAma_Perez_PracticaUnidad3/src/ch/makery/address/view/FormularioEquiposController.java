@@ -22,8 +22,12 @@ public class FormularioEquiposController {
 
 	@FXML
 	private ComboBox<String> ComboBoxSobremesa;
-	 @FXML
+	@FXML
 	private ComboBox<String> ComboMarcaPortatil;
+	@FXML
+	private ComboBox<String> ComboBoxModeloPortatil;
+	@FXML
+	private ChoiceBox<String> ChoiceBoxPortatil;
 
 	/*
 	 * @FXML void initialize() { assert ListViewModelos != null :
@@ -44,15 +48,13 @@ public class FormularioEquiposController {
 
 		ChoiceBoxSobremesa.getItems().addAll("Albacete", "Toledo", "Madrid", "Caceres", "Sevilla", "Valencia",
 				"Orense");
+		ChoiceBoxPortatil.getItems().addAll("Albacete", "Toledo", "Madrid", "Caceres", "Sevilla", "Valencia", "Orense");
 
 		// Ítems del ComboBox
-		ComboBoxSobremesa.getItems().addAll("Combo1", "Combo2", "Combo3", "Combo4", "Combo5", "Combo6", "Combo7",
-				"Combo8", "Combo9");
-		
-		ComboMarcaPortatil.getItems().addAll("Combo1", "Combo2", "Combo3", "Combo4", "Combo5", "Combo6", "Combo7",
-				"Combo8", "Combo9");
-		
-		
+		ComboBoxSobremesa.getItems().addAll("HP", "Lenovo", "Asus", "Dell", "Samsung", "MSI", "Apple");
+
+		ComboMarcaPortatil.getItems().addAll("HP", "Lenovo", "Asus", "Dell", "Samsung", "MSI", "Combo7");
+		ComboBoxModeloPortatil.getItems().addAll("Chromebook", "IdeaPad", "Galaxy Book", "XPS", "Gaming GL66", "MacBook", "ViviBook");
 
 	}
 
