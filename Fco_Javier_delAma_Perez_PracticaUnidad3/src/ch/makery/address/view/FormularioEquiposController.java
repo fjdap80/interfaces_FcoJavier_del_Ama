@@ -26,9 +26,7 @@ public class FormularioEquiposController {
 	private ComboBox<String> ComboMarcaPortatil;
 	@FXML
 	private ComboBox<String> ComboBoxModeloPortatil;
-	@FXML
-	private ChoiceBox<String> ChoiceBoxPortatil;
-
+	
 	/*
 	 * @FXML void initialize() { assert ListViewModelos != null :
 	 * "fx:id=\"ListViewModelos\" was not injected: check your FXML file 'FormularioEquipos.fxml'."
@@ -47,8 +45,7 @@ public class FormularioEquiposController {
 				: "fx:id=\"ComboBoxSobremesa\" was not injected: check your FXML file 'FormularioEquipos.fxml'.";
 
 		ChoiceBoxSobremesa.getItems().addAll("Albacete", "Toledo", "Madrid", "Caceres", "Sevilla", "Valencia",
-				"Orense");
-		ChoiceBoxPortatil.getItems().addAll("Albacete", "Toledo", "Madrid", "Caceres", "Sevilla", "Valencia", "Orense");
+				"Orense");		
 
 		// Ítems del ComboBox
 		ComboBoxSobremesa.getItems().addAll("HP", "Lenovo", "Asus", "Dell", "Samsung", "MSI", "Apple");
