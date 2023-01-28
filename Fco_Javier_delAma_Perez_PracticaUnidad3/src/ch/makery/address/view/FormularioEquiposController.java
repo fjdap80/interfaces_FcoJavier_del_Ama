@@ -7,7 +7,10 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.ListView;
 import javafx.scene.control.SelectionMode;
+import javafx.scene.control.TreeItem;
+import javafx.scene.control.TreeView;
 import javafx.scene.control.cell.TextFieldListCell;
+import javafx.scene.control.cell.TextFieldTreeCell;
 
 public class FormularioEquiposController {
 
@@ -16,17 +19,15 @@ public class FormularioEquiposController {
 
 	@FXML
 	private URL location;
-
-	@FXML
-	private ChoiceBox<String> ChoiceBoxSobremesa;
-
 	@FXML
 	private ComboBox<String> ComboBoxSobremesa;
 	@FXML
 	private ComboBox<String> ComboMarcaPortatil;
 	@FXML
 	private ComboBox<String> ComboBoxModeloPortatil;
-	
+	@FXML
+	private TreeView<String> TreeViewSobremesa;
+
 	/*
 	 * @FXML void initialize() { assert ListViewModelos != null :
 	 * "fx:id=\"ListViewModelos\" was not injected: check your FXML file 'FormularioEquipos.fxml'."
@@ -39,19 +40,33 @@ public class FormularioEquiposController {
 	 */
 	@FXML
 	void initialize() {
-		assert ChoiceBoxSobremesa != null
-				: "fx:id=\"ChoiceBoxSobremesa\" was not injected: check your FXML file 'FormularioEquipos.fxml'.";
+
 		assert ComboBoxSobremesa != null
 				: "fx:id=\"ComboBoxSobremesa\" was not injected: check your FXML file 'FormularioEquipos.fxml'.";
-
-		ChoiceBoxSobremesa.getItems().addAll("Albacete", "Toledo", "Madrid", "Caceres", "Sevilla", "Valencia",
-				"Orense");		
 
 		// Ítems del ComboBox
 		ComboBoxSobremesa.getItems().addAll("HP", "Lenovo", "Asus", "Dell", "Samsung", "MSI", "Apple");
 
 		ComboMarcaPortatil.getItems().addAll("HP", "Lenovo", "Asus", "Dell", "Samsung", "MSI", "Combo7");
-		ComboBoxModeloPortatil.getItems().addAll("Chromebook", "IdeaPad", "Galaxy Book", "XPS", "Gaming GL66", "MacBook", "ViviBook");
+		ComboBoxModeloPortatil.getItems().addAll("Chromebook", "IdeaPad", "Galaxy Book", "XPS", "Gaming GL66",
+				"MacBook", "ViviBook");
+		TreeItem<String> rootItem = new TreeItem<String>("Modelos");
+
+		// TreeItem<String> javaItem = new TreeItem<String>(MacBooks");
+		rootItem.getChildren().add(new TreeItem<String>("Legion"));
+		rootItem.getChildren().add(new TreeItem<String>("Pavilion"));
+		rootItem.getChildren().add(new TreeItem<String>("Nitro"));
+		rootItem.getChildren().add(new TreeItem<String>("Omen"));
+		rootItem.getChildren();
+
+		// Para que sea editable necesitamos especificar un CellFactory con el tipo que
+		// corresponda
+		TreeViewSobremesa.setCellFactory(TextFieldTreeCell.forTreeView());
+
+		// Expadimos por defecto el ítem raíz
+		rootItem.setExpanded(true);
+		TreeViewSobremesa.setRoot(rootItem);
+		System.out.println(TreeViewSobremesa.getExpandedItemCount());
 
 	}
 

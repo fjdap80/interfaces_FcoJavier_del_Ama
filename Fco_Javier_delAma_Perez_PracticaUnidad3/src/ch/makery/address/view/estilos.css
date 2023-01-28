@@ -1,0 +1,12 @@
+.button:hover {
+	-fx-background-color: #EED224;
+	-fx-text-fill: white;
+}
+
+#FormularioEquipos {
+	-fx-background-color: #AADDF3;
+}
+
+#TutorialUsuario {
+	-fx-background-color: #34B55D;
+}
