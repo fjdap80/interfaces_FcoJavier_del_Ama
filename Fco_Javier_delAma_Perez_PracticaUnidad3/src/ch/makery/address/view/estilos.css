@@ -1,12 +1,55 @@
 .button:hover {
-	-fx-background-color: #EED224;
+	-fx-background-color: #CDCBAC;
 	-fx-text-fill: white;
+}
+.button{
+	-fx-font-size:10,5;
 }
 
 #FormularioEquipos {
 	-fx-background-color: #AADDF3;
+	-fx-background-insets: 5;
+	
 }
 
-#TutorialUsuario {
-	-fx-background-color: #34B55D;
+GridPane{
+	-fx-grid-lines-visible:false;
 }
+.label {
+ -fx-text-fill: rgb(128,0,0); 
+ -fx-font-weight:bold;
+}
+#FormularioClientes{
+	-fx-background-color: #AADDF3;
+	-fx-background-insets: 5;	
+}
+
+
+/*#rootLayout .label {
+ -fx-text-fill: rgb(14,0,0);
+ 
+}*/
+#TutorialUsuario {
+	-fx-background-color: #E5D5E5;
+	-fx-background-insets: 5;
+	
+}
+#TutorialUsuario .label{
+	-fx-text-fill: black;
+	-fx-font-weight:normal;	
+	
+}
+
+
+.tab {	
+ -fx-font-size: 16px;
+ -fx-padding: 3 6 6 6;
+ -fx-text-fill: #ff0000;
+ -fx-font-style: oblique;
+}
+
+.chart {
+ -fx-padding: 10px;
+ -fx-background-color: lightblue;
+}
+

@@ -26,7 +26,7 @@
    <children>
       <TabPane layoutX="121.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <tabs>
-          <Tab text="Sobremesa">
+          <Tab fx:id="TabSobremesa" text="Sobremesa">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
@@ -87,6 +87,19 @@
                                  </font>
                               </Label>
                               <TreeView fx:id="TreeViewSobremesa" prefHeight="19.0" prefWidth="145.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <HBox prefHeight="100.0" prefWidth="200.0" spacing="35.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <children>
+                                    <CheckBox mnemonicParsing="false" text="256" />
+                                    <CheckBox mnemonicParsing="false" text="512">
+                                       <HBox.margin>
+                                          <Insets left="8.0" />
+                                       </HBox.margin>
+                                    </CheckBox>
+                                 </children>
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </HBox>
                            </children>
                         </GridPane>
                         <TilePane alignment="CENTER_RIGHT" layoutX="409.0" layoutY="63.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="390.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="60.0">
@@ -108,7 +121,7 @@
                   </AnchorPane>
             </content>
           </Tab>
-          <Tab text="Portátiles">
+          <Tab fx:id="TabPortatiles" text="Portátiles">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
@@ -157,7 +170,10 @@
                               <HBox spacing="50.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                  <children>
                                     <RadioButton mnemonicParsing="false" text="8" />
-                                    <RadioButton mnemonicParsing="false" text="16" />
+                                    <RadioButton mnemonicParsing="false" text="16">
+                                       <HBox.margin>
+                                          <Insets left="8.0" />
+                                       </HBox.margin></RadioButton>
                                  </children>
                                  <padding>
                                     <Insets top="5.0" />
@@ -171,7 +187,10 @@
                               <HBox spacing="35.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                  <children>
                                     <CheckBox mnemonicParsing="false" text="256" />
-                                    <CheckBox mnemonicParsing="false" text="512" />
+                                    <CheckBox mnemonicParsing="false" text="512">
+                                       <HBox.margin>
+                                          <Insets left="8.0" />
+                                       </HBox.margin></CheckBox>
                                  </children>
                                  <padding>
                                     <Insets top="5.0" />
@@ -181,7 +200,7 @@
                         </GridPane>
                         <TilePane alignment="CENTER_RIGHT" layoutX="400.0" layoutY="39.0" prefHeight="218.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="390.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="60.0">
                            <children>
-                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="ImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../../../../imagenes/Logo.jpg" />
                                  </image>

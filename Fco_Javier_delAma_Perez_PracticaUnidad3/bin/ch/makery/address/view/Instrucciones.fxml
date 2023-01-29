@@ -20,7 +20,7 @@
                   <Image url="@../../../../imagenes/Ordenador.jpg" />
                </image>
                <VBox.margin>
-                  <Insets left="20.0" />
+                  <Insets left="10.0" />
                </VBox.margin>
             </ImageView>
          </children>
@@ -45,7 +45,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label alignment="CENTER" text="Desde la pestaña de menú, el usuario podrá acceder a las diferentes secciones, siendo éstas las de CLIENTES o EQUIPOS." wrapText="true" />
+            <Label alignment="CENTER" text="Desde la pestaña de menú, el usuario podrá acceder a las diferentes secciones, siendo éstas las de CLIENTES, EQUIPOS,INSTRUCCIONES Y GRÁFICOS." wrapText="true" />
             <Label text="Desde la pestaña de EQUIPOS el usuario podrá acceder a las tablas de pedidos, tanto de ordnadores portátiles como de equipos de sobremesa." wrapText="true" GridPane.rowIndex="1" />
             <Label text="Dentro de la pantalla de CLIENTES, el usuario podrá dar de alta a nuevos clientes.Si se posiciona con el cursor entre las dos tablas, puede ajustar el tamaño de cualquiera de ellas dos." wrapText="true" GridPane.rowIndex="2" />
          </children>
@@ -60,7 +60,7 @@
             <Image url="@../../../../imagenes/Logo.jpg" />
          </image>
          <BorderPane.margin>
-            <Insets right="20.0" />
+            <Insets right="10.0" />
          </BorderPane.margin>
       </ImageView>
    </right>
