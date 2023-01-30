@@ -3,35 +3,36 @@
 	-fx-text-fill: white;
 }
 .button{
-	-fx-font-size:10,5;
+	-fx-text-fill: black;
+    -fx-background-color: #DFB951;
+    -fx-border-radius: 20.0;
+    -fx-background-radius: 20.0;
+    -fx-padding: 5.0;
+    -fx-font:italic 12.0pt "Arial";
+    -fx-effect: dropshadow( one-pass-box , black , 8.0 , 0.0 , 2.0 , 0.0 );
 }
 
 #FormularioEquipos {
 	-fx-background-color: #AADDF3;
-	-fx-background-insets: 5;
-	
+	-fx-background-insets: 5;	
 }
 
 GridPane{
 	-fx-grid-lines-visible:false;
+	 
 }
 .label {
- -fx-text-fill: rgb(128,0,0); 
+ -fx-text-fill: rgb(128.0,0.0,0.0); 
  -fx-font-weight:bold;
 }
 #FormularioClientes{
 	-fx-background-color: #AADDF3;
-	-fx-background-insets: 5;	
+	-fx-background-insets: 5.0;	
 }
 
-
-/*#rootLayout .label {
- -fx-text-fill: rgb(14,0,0);
- 
-}*/
 #TutorialUsuario {
 	-fx-background-color: #E5D5E5;
-	-fx-background-insets: 5;
+	-fx-background-insets: 5.0;
 	
 }
 #TutorialUsuario .label{
@@ -42,14 +43,14 @@ GridPane{
 
 
 .tab {	
- -fx-font-size: 16px;
- -fx-padding: 3 6 6 6;
+ -fx-font-size: 16.0px;
+ -fx-padding: 3.0 6.0 6.0 6.0;
  -fx-text-fill: #ff0000;
  -fx-font-style: oblique;
 }
 
 .chart {
- -fx-padding: 10px;
+ -fx-padding: 10.0px;
  -fx-background-color: lightblue;
 }
 
