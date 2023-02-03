@@ -11,6 +11,16 @@
     -fx-font:italic 12.0pt "Arial";
     -fx-effect: dropshadow( one-pass-box , black , 8.0 , 0.0 , 2.0 , 0.0 );
 }
+.button:focused {
+    -fx-text-fill: green;
+}
+.check-box:selected{
+	-fx-text-fill: #85929E;
+	-fx-background-color: #D7E2BD;	
+}
+.radio-button:selected{
+	-fx-underline: true;
+}
 
 #FormularioEquipos {
 	-fx-background-color: #AADDF3;
@@ -40,6 +50,13 @@ GridPane{
 	-fx-font-weight:normal;	
 	
 }
+/* #choiceBoxClientes:selected{
+	-fx-text-fill: red;
+	}*/
+	
+Hyperlink:hover{
+		-fx-text-fill: red;
+	}
 
 
 .tab {	
@@ -49,8 +66,50 @@ GridPane{
  -fx-font-style: oblique;
 }
 
+/*ejes */
+.axis {
+    -fx-tick-label-fill: black;
+    -fx-tick-length: 20;
+    -fx-minor-tick-length: 10;
+}
+
+/*.chart-alternative-column-fill:visible {
+    -fx-fill: #99bcfd;
+    -fx-stroke: transparent;
+    -fx-stroke-width: 0;
+}*/
+
+
+.chart-legend {
+ -fx-background-color: #A4C891;
+ -fx-padding: 20px;
+ -fx-border-width: 2;
+ -fx-border-style: solid;
+ -fx-border-color: yellow, green;
+ -fx-border-insets: 7, 2;
+}
+/*colores de las barras */
+.chart-bar {
+    -fx-background-color: linear-gradient(to top, #B4B4E7, #CF5568, grey);
+    -fx-border-color: rgba(0,168,355,0.3) rgba(0,168,355,0.3) 
+        transparent rgba(0,168,355,0.3);
+    -fx-background-radius: 0;
+}
+
+/* Estilos del fondo del área del gráfico */
+.chart-plot-background {
+    -fx-background-color: #E7F0D2;
+}
+
 .chart {
  -fx-padding: 10.0px;
  -fx-background-color: lightblue;
+}
+
+/*líneas del gráfico de Estadísticas Generales */
+.default-color0.chart-series-line { -fx-stroke: #AB3175; }
+.default-color1.chart-series-line { -fx-stroke: #A58D5F; }
+/*punto del las líneas */
+.default-color0.data2.chart-line-symbol {-fx-background-color:#F05454;
 }
 
