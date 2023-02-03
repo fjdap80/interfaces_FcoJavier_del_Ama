@@ -15,6 +15,11 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
+/**
+* @author FcoJavier 
+* @version 1.0
+* 
+*/
 public class RootLayoutController {
 	@FXML
 	private BorderPane rootLayout;
@@ -52,18 +57,12 @@ public class RootLayoutController {
 				: "fx:id=\"BotonTutorial\" was not injected: check your FXML file 'RootLayout.fxml'.";
 
 	}
-
-	/*
-	 * @FXML void abrirFichaClientes(ActionEvent event) { try { // Cargamos el
-	 * archivo Controles Dinámicos FXMLLoader loader = new FXMLLoader();
-	 * loader.setLocation(RootLayoutController.class.getResource(
-	 * "FormularioClientes.fxml")); AnchorPane listadoControladoresClientes =
-	 * (AnchorPane) loader.load(); // Se sitúa en el centro del diseño principal
-	 * rootLayout.setCenter(listadoControladoresClientes); } catch (IOException e) {
-	 * e.printStackTrace(); }
-	 * 
-	 * }
-	 */
+	
+	/**
+	* Método abrirFichaEquipos() el cual accede a "FormularioEquipos.fxml"
+	*
+	* @param event 
+	*/
 
 	@FXML
 	void abrirFichaEquipos(ActionEvent event) {
@@ -80,7 +79,11 @@ public class RootLayoutController {
 		}
 
 	}
-
+	/**
+	* Método abrirFormularioClientes() el cual accede a "FormularioClientes.fxml"
+	*
+	* @param event 
+	*/
 	@FXML
 	void abrirFormularioClientes(ActionEvent event) {
 
@@ -96,7 +99,11 @@ public class RootLayoutController {
 		}
 
 	}
-
+	/**
+	* Método abrirTutorial() el cual accede a "Instrucciones.fxml"
+	*
+	* @param event 
+	*/
 	@FXML
 	void abrirTutorial(ActionEvent event) {
 
@@ -112,7 +119,11 @@ public class RootLayoutController {
 		}
 
 	}
-
+	/**
+	* Método abrirInicioCorrecto() el cual accede a "RootLayout.fxml"
+	*
+	* @param event 
+	*/
 	@FXML
 	void abrirInicioCorrecto(ActionEvent event) {
 
@@ -128,6 +139,11 @@ public class RootLayoutController {
 		}
 
 	}
+	/**
+	* Método abrirGrafico() el cual accede a "Grafico.fxml"
+	*
+	* @param event 
+	*/
 
 	@FXML
 	void abrirGrafico(ActionEvent event) {

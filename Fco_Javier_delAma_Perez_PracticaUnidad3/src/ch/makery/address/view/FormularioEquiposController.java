@@ -12,6 +12,11 @@ import javafx.scene.control.TreeView;
 import javafx.scene.control.cell.TextFieldListCell;
 import javafx.scene.control.cell.TextFieldTreeCell;
 
+/**
+* @author FcoJavier 
+* @version 1.0
+* 
+*/
 public class FormularioEquiposController {
 
 	@FXML

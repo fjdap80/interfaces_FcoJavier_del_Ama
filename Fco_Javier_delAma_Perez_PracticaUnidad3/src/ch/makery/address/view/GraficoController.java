@@ -15,6 +15,12 @@ import javafx.scene.chart.CategoryAxis;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.NumberAxis;
 
+/**
+* @author FcoJavier 
+* @version 1.0
+* 
+*/
+
 public class GraficoController {
 	@FXML
 	private ResourceBundle resources;

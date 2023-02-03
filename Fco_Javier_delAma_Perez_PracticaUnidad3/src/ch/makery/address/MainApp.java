@@ -1,7 +1,6 @@
 package ch.makery.address;
 
 import java.io.IOException;
-
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXMLLoader;
@@ -11,31 +10,46 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
+
+/**
+* Clase Main donde se inicia la aplicación
+* 
+* @author FcoJavier 
+* @version 1.0
+* 
+*/
+
 public class MainApp extends Application {
 
 	private Stage primaryStage;
 	private BorderPane rootLayout;
 
+	/**
+	* Método start() que recibe un objeto de la clase Stage.
+	*
+	* @param primaryStage es el objeto y contenedor principal
+	*/
+	
 	@Override
 	public void start(Stage primaryStage) {
 		this.primaryStage = primaryStage;
-		this.primaryStage.setTitle("Fichas Clientes");
+		this.primaryStage.setTitle("Práctica clase");
 
 		initRootLayout();
-
 	}
 
 	/**
-	 * Initializes the root layout.
+	 * Método initRootLayout(). Inicializa el diseño de la pantalla principal..
 	 */
+	
 	public void initRootLayout() {
 		try {
-			// Load root layout from fxml file.
+			// Carga el diseño del archivo FXML en la variable rootLayout
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(MainApp.class.getResource("view/RootLayout.fxml"));
 			rootLayout = (BorderPane) loader.load();
 
-			// Show the scene containing the root layout.
+			// Mostramos la escena del BorderPane de la variable rootLayot
 			Scene scene = new Scene(rootLayout);
 			primaryStage.setScene(scene);
 			primaryStage.show();
@@ -43,6 +57,14 @@ public class MainApp extends Application {
 			e.printStackTrace();
 		}
 	}
+	
+	/**
+	* Getter para que los controladores accedan al Stage con la ventana
+	* principal
+	*
+	* @return El Stage vuelve a la ventana principal
+	*/
+
 
 	public Stage getPrimaryStage() {
 		return primaryStage;
