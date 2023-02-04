@@ -1,3 +1,14 @@
+.root {
+    -fx-font-size: 14px;
+    -fx-font-family: sans-serif;
+    -fx-background-color: #ffffff;   
+    -fx-background-insets:3;    
+	-fx-border-style: solid;
+	-fx-border-color: grey;
+	-fx-border-insets: 7;
+	-fx-border-width:3;
+}
+
 .button:hover {
 	-fx-background-color: #CDCBAC;
 	-fx-text-fill: white;
@@ -24,25 +35,39 @@
 
 #FormularioEquipos {
 	-fx-background-color: #AADDF3;
-	-fx-background-insets: 5.0;	
+	
 }
 
-GridPane{
-	-fx-grid-lines-visible:false;
+/* Estilos del contenido principal */
+.content-section {
+    -fx-padding: 10 20 10 20;
+    -fx-wrap-text: true;
+    -fx-pref-width: 500px;    
+    
+}
+
+GridPane {
+	-fx-min-width: 400px;    
+    -fx-max-width: 200px;
+	-fx-font-size:12px;    
+    -fx-border-width: 1;
+    -fx-border-color: #8D9092;
+    -fx-padding: 10 20 10 20;
+    -fx-background-color:#D7E0E8;        
 	 
 }
 .label {
- -fx-text-fill: rgb(128.0,0.0,0.0); 
+ -fx-text-fill: #494A4B; 
  -fx-font-weight:bold;
 }
 #FormularioClientes{
 	-fx-background-color: #AADDF3;
-	-fx-background-insets: 5.0;	
+	
 }
 
 #TutorialUsuario {
 	-fx-background-color: #E5D5E5;
-	-fx-background-insets: 5.0;
+	
 	
 }
 #TutorialUsuario .label{

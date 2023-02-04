@@ -43,7 +43,7 @@
       </MenuBar>
    </top>
    <center>
-      <VBox alignment="TOP_CENTER" spacing="60.0" BorderPane.alignment="CENTER">
+      <VBox alignment="TOP_CENTER" spacing="60.0" styleClass="content-section" BorderPane.alignment="CENTER">
          <children>
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Del Ama's System">
                <font>
