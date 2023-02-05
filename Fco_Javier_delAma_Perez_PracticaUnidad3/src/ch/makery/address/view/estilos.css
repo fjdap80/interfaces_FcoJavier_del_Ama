@@ -1,12 +1,22 @@
+/**
+ * Estilos CSS que se aplicará en el proyecto.
+ */
+
 .root {
     -fx-font-size: 14px;
-    -fx-font-family: sans-serif;
-    -fx-background-color: #ffffff;   
+    -fx-font-family: sans-serif;    
     -fx-background-insets:3;    
 	-fx-border-style: solid;
 	-fx-border-color: grey;
 	-fx-border-insets: 7;
 	-fx-border-width:3;
+	
+}
+#paginaInicio{
+	-fx-background-image: url("fondo.jpg");
+	-fx-padding: 5 5 5 5;
+	-fx-pref-min-height:400;
+    -fx-pref-max-height:600;
 }
 
 .button:hover {
@@ -41,8 +51,7 @@
 /* Estilos del contenido principal */
 .content-section {
     -fx-padding: 10 20 10 20;
-    -fx-wrap-text: true;
-    -fx-pref-width: 500px;    
+    -fx-wrap-text: true;    
     
 }
 

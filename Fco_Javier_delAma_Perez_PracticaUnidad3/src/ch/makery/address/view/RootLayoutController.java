@@ -20,6 +20,11 @@ import javafx.stage.Stage;
 * @version 1.0
 * 
 */
+
+/**
+ * Clase desde la cual se asignan los controles que se van 
+ * a utilizar en la página RootLayout.fxml
+ */
 public class RootLayoutController {
 	@FXML
 	private BorderPane rootLayout;

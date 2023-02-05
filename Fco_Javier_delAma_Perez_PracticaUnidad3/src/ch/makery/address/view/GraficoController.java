@@ -21,6 +21,11 @@ import javafx.scene.chart.NumberAxis;
 * 
 */
 
+/**
+ * Clase desde la cual se asignan los controles que se van 
+ * a utilizar en los gráficos. 
+ */
+
 public class GraficoController {
 	@FXML
 	private ResourceBundle resources;

@@ -39,7 +39,7 @@ public class MainApp extends Application {
 	}
 
 	/**
-	 * Método initRootLayout(). Inicializa el diseño de la pantalla principal..
+	 * Método initRootLayout(). Inicializa el diseño de la pantalla principal.
 	 */
 	
 	public void initRootLayout() {

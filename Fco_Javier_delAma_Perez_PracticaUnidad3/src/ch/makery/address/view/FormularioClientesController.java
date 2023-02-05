@@ -11,6 +11,12 @@ import javafx.scene.control.ChoiceBox;
 * 
 */
 
+/**
+ * Clase desde la cual se asignan los controles que se van 
+ * a utilizar en la página FormularioClientes.fxml
+ * 
+ */
+
 public class FormularioClientesController {
 
     @FXML

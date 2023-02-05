@@ -17,6 +17,12 @@ import javafx.scene.control.cell.TextFieldTreeCell;
 * @version 1.0
 * 
 */
+
+/**
+ * Clase desde la cual se asignan los controles que se van a utilizar en la
+ * página FormularioEquipos.fxml
+ * 
+ */
 public class FormularioEquiposController {
 
 	@FXML
@@ -33,16 +39,6 @@ public class FormularioEquiposController {
 	@FXML
 	private TreeView<String> TreeViewSobremesa;
 
-	/*
-	 * @FXML void initialize() { assert ListViewModelos != null :
-	 * "fx:id=\"ListViewModelos\" was not injected: check your FXML file 'FormularioEquipos.fxml'."
-	 * ; // Ítems del ListView (con la segunda línea se asigna un CellFactory para
-	 * permitir que sean editables) ListViewModelos.getItems().addAll("Lista1",
-	 * "Lista2", "Lista3");
-	 * ListViewModelos.setCellFactory(TextFieldListCell.forListView()); // Para
-	 * seleccionar más de un ítem a la vez
-	 * ListViewModelos.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
-	 */
 	@FXML
 	void initialize() {
 
