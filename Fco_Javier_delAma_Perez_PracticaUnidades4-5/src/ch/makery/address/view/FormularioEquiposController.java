@@ -16,6 +16,7 @@ import javafx.scene.control.cell.TextFieldTreeCell;
 * @author FcoJavier 
 * @version 1.0
 * 
+* 
 */
 
 /**
@@ -45,7 +46,7 @@ public class FormularioEquiposController {
 		assert ComboBoxSobremesa != null
 				: "fx:id=\"ComboBoxSobremesa\" was not injected: check your FXML file 'FormularioEquipos.fxml'.";
 
-		// Ítems del ComboBox
+		
 		ComboBoxSobremesa.getItems().addAll("HP", "Lenovo", "Asus", "Dell", "Samsung", "MSI", "Apple");
 
 		ComboMarcaPortatil.getItems().addAll("HP", "Lenovo", "Asus", "Dell", "Samsung", "MSI", "Combo7");

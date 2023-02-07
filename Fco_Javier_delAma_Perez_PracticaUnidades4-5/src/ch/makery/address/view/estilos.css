@@ -1,6 +1,3 @@
-/**
- * Estilos CSS que se aplicará en el proyecto.
- */
 
 .root {
     -fx-font-size: 14px;
@@ -17,6 +14,9 @@
 	-fx-padding: 5 5 5 5;
 	-fx-pref-min-height:400;
     -fx-pref-max-height:600;
+}
+ImageView{
+	-fx-opacity:0.8;	
 }
 
 .button:hover {
@@ -56,13 +56,17 @@
 }
 
 GridPane {
-	-fx-min-width: 400px;    
-    -fx-max-width: 200px;
+	
 	-fx-font-size:12px;    
     -fx-border-width: 1;
     -fx-border-color: #8D9092;
     -fx-padding: 10 20 10 20;
-    -fx-background-color:#D7E0E8;        
+    -fx-background-color:#D7E0E8;  
+    -fx-background-insets:3;    
+	-fx-border-style: solid;
+	-fx-border-color: red;
+	-fx-border-insets: 7;
+	-fx-border-width:3;      
 	 
 }
 .label {
