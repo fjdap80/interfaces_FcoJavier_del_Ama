@@ -1,23 +1,26 @@
 
-.root {
-    -fx-font-size: 14px;
+.root {	
+    -fx-font-size: 14.0px;
     -fx-font-family: sans-serif;         
 	-fx-border-style: solid;
 	-fx-border-color: grey,#E0EEA2;
-	-fx-border-insets: 5,0;
-	-fx-border-width:7,7;	   	
+	-fx-border-insets: 5.0,0.0;
+	-fx-border-width:7.0,7.0;   	
+	   	
 }
 
 #paginaInicio{
-	-fx-background-image: url("fondo.jpg");
-	-fx-padding:0 ;	
-	-fx-pref-min-width:400;
-    -fx-pref-max-height:600; 
-     
+	-fx-background-image: url("fondo.jpg");	
+	-fx-pref-width:800;
+	-fx-pref-height:500;     
+}
+#TilePaneEquipos{
+-fx-padding:50.0 5.0 10.0 ;		
+	
 }
 
 #TextDatosPersonales{
- -fx-font-size: 13px;
+ -fx-font-size: 13.0px;
  -fx-font-style: italic;   
 }
 
@@ -46,28 +49,25 @@
 }
 
 #FormularioEquipos {
-	-fx-background-color: #AADDF3;
-	-fx-pref-min-height:300;
-    -fx-pref-max-height:600;	
+	-fx-background-color: #AADDF3;    
 }
-
-
 GridPane {	
 	-fx-alignment: center;
-	-fx-font-size:12px;    
-    -fx-border-width: 1;
+	-fx-font-size:12.0px;    
+    -fx-border-width: 1.0;
     -fx-border-color: #8D9092;
-    -fx-padding: 10 20 10 20;
+    -fx-padding: 10.0 20.0 10.0 20.0;
     -fx-background-color:#D7E0E8;  
-    -fx-background-insets:3;    
+    -fx-background-insets:3.0;    
 	-fx-border-style: solid;
-	-fx-border-color: red, green;
-	-fx-border-insets: 7,3;
-	-fx-border-width:3;     
-	-fx-padding: 10px; 
-		
-	 
+	-fx-border-color: #B44335, green;
+	-fx-border-insets: 7.0,2.0;
+	-fx-border-width:3.0,2.0;     
+	/*-fx-padding: 6.0px; 	*/
+	-fx-hgap: 5;
+    -fx-vgap: 5;   
 }
+
 .label {
  -fx-text-fill: #494A4B; 
  -fx-font-weight:bold;
@@ -85,7 +85,7 @@ GridPane {
 	-fx-font-weight:normal;	
 	
 }
- #choiceBoxClientes > .label,#choiceBoxClientes .menu-item:checked .label  {
+#choiceBoxClientes > .label,#choiceBoxClientes .menu-item:checked .label  {
 	-fx-text-fill: red;
 	}
 	
@@ -93,17 +93,17 @@ GridPane {
 	  
 	-fx-border-style: solid;
 	-fx-border-color: #C1B5BD;	
-	-fx-padding: 10px; 
-	-fx-font-size: 10px;
-	-fx-background-radius: 0, 15;
-	-fx-background-color: teal, derive(red, 70%);
-    -fx-background-insets: 0, 8;
+	-fx-padding: 10.0px; 
+	-fx-font-size: 10.0px;
+	-fx-background-radius: 0.0, 15.0;
+	-fx-background-color: teal, derive(red, 70.0%);
+    -fx-background-insets: 0.0, 8.0;
 	
 		
 }
 Hyperlink:hover, #Hyperlink{
 		-fx-text-fill: black;
-		-fx-padding: 5px; 	
+		-fx-padding: 5.0px; 	
 	}
 	
 .tab {	
