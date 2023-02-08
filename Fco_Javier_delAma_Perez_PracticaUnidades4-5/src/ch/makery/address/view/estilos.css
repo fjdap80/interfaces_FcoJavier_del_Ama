@@ -1,22 +1,24 @@
 
 .root {
     -fx-font-size: 14px;
-    -fx-font-family: sans-serif;    
-    -fx-background-insets:3;    
+    -fx-font-family: sans-serif;         
 	-fx-border-style: solid;
-	-fx-border-color: grey;
-	-fx-border-insets: 7;
-	-fx-border-width:3;
-	
+	-fx-border-color: grey,#E0EEA2;
+	-fx-border-insets: 5,0;
+	-fx-border-width:7,7;	   	
 }
+
 #paginaInicio{
 	-fx-background-image: url("fondo.jpg");
-	-fx-padding: 5 5 5 5;
-	-fx-pref-min-height:400;
-    -fx-pref-max-height:600;
+	-fx-padding:0 ;	
+	-fx-pref-min-width:400;
+    -fx-pref-max-height:600; 
+     
 }
-ImageView{
-	-fx-opacity:0.8;	
+
+#TextDatosPersonales{
+ -fx-font-size: 13px;
+ -fx-font-style: italic;   
 }
 
 .button:hover {
@@ -45,18 +47,13 @@ ImageView{
 
 #FormularioEquipos {
 	-fx-background-color: #AADDF3;
-	
+	-fx-pref-min-height:300;
+    -fx-pref-max-height:600;	
 }
 
-/* Estilos del contenido principal */
-.content-section {
-    -fx-padding: 10 20 10 20;
-    -fx-wrap-text: true;    
-    
-}
 
-GridPane {
-	
+GridPane {	
+	-fx-alignment: center;
 	-fx-font-size:12px;    
     -fx-border-width: 1;
     -fx-border-color: #8D9092;
@@ -64,9 +61,11 @@ GridPane {
     -fx-background-color:#D7E0E8;  
     -fx-background-insets:3;    
 	-fx-border-style: solid;
-	-fx-border-color: red;
-	-fx-border-insets: 7;
-	-fx-border-width:3;      
+	-fx-border-color: red, green;
+	-fx-border-insets: 7,3;
+	-fx-border-width:3;     
+	-fx-padding: 10px; 
+		
 	 
 }
 .label {
@@ -74,13 +73,11 @@ GridPane {
  -fx-font-weight:bold;
 }
 #FormularioClientes{
-	-fx-background-color: #AADDF3;
-	
+	-fx-background-color: #AADDF3;	
 }
 
 #TutorialUsuario {
-	-fx-background-color: #E5D5E5;
-	
+	-fx-background-color: #E5D5E5;	
 	
 }
 #TutorialUsuario .label{
@@ -92,11 +89,23 @@ GridPane {
 	-fx-text-fill: red;
 	}
 	
-Hyperlink:hover{
-		-fx-text-fill: red;
+#VBoxHyperlink{
+	  
+	-fx-border-style: solid;
+	-fx-border-color: #C1B5BD;	
+	-fx-padding: 10px; 
+	-fx-font-size: 10px;
+	-fx-background-radius: 0, 15;
+	-fx-background-color: teal, derive(red, 70%);
+    -fx-background-insets: 0, 8;
+	
+		
+}
+Hyperlink:hover, #Hyperlink{
+		-fx-text-fill: black;
+		-fx-padding: 5px; 	
 	}
-
-
+	
 .tab {	
  -fx-font-size: 16.0px;
  -fx-padding: 3.0 6.0 6.0 6.0;

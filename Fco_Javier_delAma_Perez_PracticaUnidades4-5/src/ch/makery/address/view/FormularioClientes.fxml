@@ -17,7 +17,6 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
 <BorderPane id="FormularioClientes" fx:id="FormularioClientes" prefHeight="300.0" prefWidth="600.0" stylesheets="@estilos.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.FormularioClientesController">
    <top>
@@ -37,21 +36,19 @@
    <left>
       <VBox prefHeight="200.0" prefWidth="100.0" spacing="8.0" BorderPane.alignment="CENTER">
          <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Datos Personales">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-               <VBox.margin>
-                  <Insets />
-               </VBox.margin>
-            </Text>
-            <Hyperlink text="Inicio" textFill="#5e794e">
+            <Label id="TextDatosPersonales" stylesheets="@estilos.css" text="Formulario clientes" textAlignment="CENTER" wrapText="true" />
+            <VBox id="VBoxHyperlink" stylesheets="@estilos.css">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
-               <font>
-                  <Font name="System Italic" size="15.0" />
-               </font></Hyperlink>
+               <children>
+                  <Hyperlink id="Hyperlink" text="Inicio" textFill="#5e794e">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </VBox>
          </children>
          <padding>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
@@ -96,11 +93,11 @@
                   </DatePicker>
                   <ChoiceBox id="choiceBoxClientes" fx:id="choiceProvincia" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                   <ListView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-                  <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                   <TextField GridPane.columnIndex="1" GridPane.rowIndex="5" />
                </children>
                <BorderPane.margin>
-                  <Insets bottom="10.0" top="10.0" />
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
                </BorderPane.margin>
             </GridPane>
          </center>
