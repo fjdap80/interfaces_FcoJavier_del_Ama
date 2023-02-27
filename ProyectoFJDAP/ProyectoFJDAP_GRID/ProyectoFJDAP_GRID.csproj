@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="movil.jpg" />
+    <None Remove="nintendoRetro.jpg" />
+    <None Remove="ps5.jpg" />
+    <None Remove="robot.jpg" />
+    <None Remove="xbox.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="movil.jpg" />
+    <Resource Include="nintendoRetro.jpg" />
+    <Resource Include="ps5.jpg" />
+    <Resource Include="robot.jpg" />
+    <Resource Include="xbox.jpg" />
+  </ItemGroup>
+
+</Project>
