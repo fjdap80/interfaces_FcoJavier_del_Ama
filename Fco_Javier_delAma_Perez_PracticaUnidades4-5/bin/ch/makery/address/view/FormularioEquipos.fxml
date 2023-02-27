@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="FormularioEquipos" prefHeight="300.0" prefWidth="600.0" stylesheets="@estilos.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.FormularioEquiposController">
+   <children>
+      <TabPane layoutX="121.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab fx:id="TabSobremesa" text="Sobremesa">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="280.0" prefWidth="600.0">
+                     <children>
+                        <HBox layoutX="200.0" layoutY="14.0" prefHeight="55.0" prefWidth="600.0" spacing="5.0" style="-fx-background-color: #336699;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <padding>
+                              <Insets left="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <GridPane alignment="CENTER" layoutX="100.0" layoutY="64.0" maxWidth="295.0" minWidth="295.0" prefHeight="165.0" prefWidth="295.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="185.0" AnchorPane.topAnchor="64.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="122.3333740234375" minWidth="10.0" prefWidth="96.3333740234375" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.6666259765625" minWidth="10.0" prefWidth="157.6666259765625" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="Marca">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Memoria" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="RAM" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Precio" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Observaciones" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <ComboBox fx:id="ComboBoxSobremesa" prefWidth="150.0" GridPane.columnIndex="1" />
+                              <HBox spacing="50.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <children>
+                                    <RadioButton mnemonicParsing="false" prefHeight="17.0" prefWidth="35.0" text="8" />
+                                    <RadioButton mnemonicParsing="false" text="16" />
+                                 </children>
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </HBox>
+                              <ListView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <Label text="Modelo" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TreeView fx:id="TreeViewSobremesa" prefHeight="19.0" prefWidth="145.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <HBox prefHeight="100.0" prefWidth="200.0" spacing="35.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <children>
+                                    <CheckBox mnemonicParsing="false" text="256" />
+                                    <CheckBox mnemonicParsing="false" text="512">
+                                       <HBox.margin>
+                                          <Insets left="8.0" />
+                                       </HBox.margin>
+                                    </CheckBox>
+                                 </children>
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </GridPane>
+                        <TilePane alignment="CENTER_RIGHT" layoutX="409.0" layoutY="63.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="390.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="60.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../imagenes/Logo.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </TilePane>
+                        <VBox layoutX="9.0" layoutY="182.0" spacing="10.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="20.0">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="70.0" text="Guardar" />
+                              <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="70.0" text="Borrar" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="TabPortatiles" text="Portátiles">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox prefHeight="55.0" prefWidth="600.0" spacing="5.0" style="-fx-background-color: #336699;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <padding>
+                              <Insets left="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <GridPane alignment="TOP_CENTER" layoutX="100.0" layoutY="65.0" maxWidth="295.0" minWidth="295.0" prefHeight="164.0" prefWidth="295.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="185.0" AnchorPane.topAnchor="65.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="122.3333740234375" minWidth="10.0" prefWidth="88.66666666666667" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.6666259765625" minWidth="10.0" prefWidth="150.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Marca">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Memoria" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="RAM" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Precio" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Observaciones" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <ComboBox fx:id="ComboMarcaPortatil" prefWidth="150.0" GridPane.columnIndex="1" />
+                              <ListView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <HBox spacing="50.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <children>
+                                    <RadioButton mnemonicParsing="false" text="8" />
+                                    <RadioButton mnemonicParsing="false" text="16">
+                                       <HBox.margin>
+                                          <Insets left="8.0" />
+                                       </HBox.margin>
+                                    </RadioButton>
+                                 </children>
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </HBox>
+                              <Label text="Modelo" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="ComboBoxModeloPortatil" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <HBox spacing="35.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <children>
+                                    <CheckBox allowIndeterminate="true" mnemonicParsing="false" text="256">
+                                       <HBox.margin>
+                                          <Insets top="5.0" />
+                                       </HBox.margin></CheckBox>
+                                    <CheckBox allowIndeterminate="true" mnemonicParsing="false" text="512">
+                                       <HBox.margin>
+                                          <Insets left="8.0" top="5.0" />
+                                       </HBox.margin>
+                                    </CheckBox>
+                                 </children>
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                                 <GridPane.margin>
+                                    <Insets top="5.0" />
+                                 </GridPane.margin>
+                              </HBox>
+                           </children>
+                        </GridPane>
+                        <TilePane alignment="CENTER_RIGHT" layoutX="400.0" layoutY="39.0" prefHeight="218.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="390.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="60.0">
+                           <children>
+                              <ImageView fx:id="ImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../imagenes/Logo.jpg" />
+                                 </image>
+                                 <TilePane.margin>
+                                    <Insets />
+                                 </TilePane.margin>
+                              </ImageView>
+                           </children>
+                        </TilePane>
+                        <VBox layoutX="36.0" layoutY="160.0" spacing="10.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="20.0">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="70.0" text="Guardar" />
+                              <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="70.0" text="Borrar" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
