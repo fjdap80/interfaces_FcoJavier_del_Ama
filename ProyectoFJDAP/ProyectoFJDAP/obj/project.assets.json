@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fjdap\\source\\repos\\ProyectoFJDAP\\ProyectoFJDAP\\ProyectoFJDAP.csproj",
+      "projectUniqueName": "C:\\Users\\fjdap\\Documents\\GitHub\\interfaces_FcoJavier_del_Ama\\ProyectoFJDAP\\ProyectoFJDAP\\ProyectoFJDAP.csproj",
       "projectName": "ProyectoFJDAP",
-      "projectPath": "C:\\Users\\fjdap\\source\\repos\\ProyectoFJDAP\\ProyectoFJDAP\\ProyectoFJDAP.csproj",
+      "projectPath": "C:\\Users\\fjdap\\Documents\\GitHub\\interfaces_FcoJavier_del_Ama\\ProyectoFJDAP\\ProyectoFJDAP\\ProyectoFJDAP.csproj",
       "packagesPath": "C:\\Users\\fjdap\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fjdap\\source\\repos\\ProyectoFJDAP\\ProyectoFJDAP\\obj\\",
+      "outputPath": "C:\\Users\\fjdap\\Documents\\GitHub\\interfaces_FcoJavier_del_Ama\\ProyectoFJDAP\\ProyectoFJDAP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fjdap\\AppData\\Roaming\\NuGet\\NuGet.Config",

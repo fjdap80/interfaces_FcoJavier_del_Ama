@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fjdap\\source\\repos\\ProyectoFJDAP\\ProyectoFJDAP_GRID\\ProyectoFJDAP_GRID.csproj": {}
+    "C:\\Users\\fjdap\\Documents\\GitHub\\interfaces_FcoJavier_del_Ama\\ProyectoFJDAP\\ProyectoFJDAP_GRID\\ProyectoFJDAP_GRID.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fjdap\\source\\repos\\ProyectoFJDAP\\ProyectoFJDAP_GRID\\ProyectoFJDAP_GRID.csproj": {
+    "C:\\Users\\fjdap\\Documents\\GitHub\\interfaces_FcoJavier_del_Ama\\ProyectoFJDAP\\ProyectoFJDAP_GRID\\ProyectoFJDAP_GRID.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fjdap\\source\\repos\\ProyectoFJDAP\\ProyectoFJDAP_GRID\\ProyectoFJDAP_GRID.csproj",
+        "projectUniqueName": "C:\\Users\\fjdap\\Documents\\GitHub\\interfaces_FcoJavier_del_Ama\\ProyectoFJDAP\\ProyectoFJDAP_GRID\\ProyectoFJDAP_GRID.csproj",
         "projectName": "ProyectoFJDAP_GRID",
-        "projectPath": "C:\\Users\\fjdap\\source\\repos\\ProyectoFJDAP\\ProyectoFJDAP_GRID\\ProyectoFJDAP_GRID.csproj",
+        "projectPath": "C:\\Users\\fjdap\\Documents\\GitHub\\interfaces_FcoJavier_del_Ama\\ProyectoFJDAP\\ProyectoFJDAP_GRID\\ProyectoFJDAP_GRID.csproj",
         "packagesPath": "C:\\Users\\fjdap\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fjdap\\source\\repos\\ProyectoFJDAP\\ProyectoFJDAP_GRID\\obj\\",
+        "outputPath": "C:\\Users\\fjdap\\Documents\\GitHub\\interfaces_FcoJavier_del_Ama\\ProyectoFJDAP\\ProyectoFJDAP_GRID\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fjdap\\AppData\\Roaming\\NuGet\\NuGet.Config",
