@@ -8,11 +8,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="image\sega.jpg" />
     <None Remove="movil.jpg" />
     <None Remove="nintendoRetro.jpg" />
     <None Remove="ps5.jpg" />
     <None Remove="robot.jpg" />
     <None Remove="xbox.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="image\sega.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>

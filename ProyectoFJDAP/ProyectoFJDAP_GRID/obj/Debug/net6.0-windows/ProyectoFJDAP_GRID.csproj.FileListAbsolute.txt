@@ -40,3 +40,5 @@ C:\Users\fjdap\Documents\GitHub\interfaces_FcoJavier_del_Ama\ProyectoFJDAP\Proye
 C:\Users\fjdap\Documents\GitHub\interfaces_FcoJavier_del_Ama\ProyectoFJDAP\ProyectoFJDAP_GRID\obj\Debug\net6.0-windows\ProyectoFJDAP_GRID.pdb
 C:\Users\fjdap\Documents\GitHub\interfaces_FcoJavier_del_Ama\ProyectoFJDAP\ProyectoFJDAP_GRID\obj\Debug\net6.0-windows\ProyectoFJDAP_GRID.genruntimeconfig.cache
 C:\Users\fjdap\Documents\GitHub\interfaces_FcoJavier_del_Ama\ProyectoFJDAP\ProyectoFJDAP_GRID\obj\Debug\net6.0-windows\ref\ProyectoFJDAP_GRID.dll
+C:\Users\fjdap\Documents\GitHub\interfaces_FcoJavier_del_Ama\ProyectoFJDAP\ProyectoFJDAP_GRID\bin\Debug\net6.0-windows\image\sega.jpg
+C:\Users\fjdap\Documents\GitHub\interfaces_FcoJavier_del_Ama\ProyectoFJDAP\ProyectoFJDAP_GRID\obj\Debug\net6.0-windows\ProyectoFJDAP_GRID_Content.g.cs

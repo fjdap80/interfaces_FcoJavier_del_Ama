@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProyectoFJDAP", "ProyectoFJDAP\ProyectoFJDAP.csproj", "{A0BADFA9-9251-4A80-99E7-9170211A11DC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoFJDAP_GRID", "ProyectoFJDAP_GRID\ProyectoFJDAP_GRID.csproj", "{0E308E26-6A15-41E1-BF3A-8837DD8211B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProyectoFJDAP_GRID", "ProyectoFJDAP_GRID\ProyectoFJDAP_GRID.csproj", "{0E308E26-6A15-41E1-BF3A-8837DD8211B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A0BADFA9-9251-4A80-99E7-9170211A11DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A0BADFA9-9251-4A80-99E7-9170211A11DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A0BADFA9-9251-4A80-99E7-9170211A11DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A0BADFA9-9251-4A80-99E7-9170211A11DC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0E308E26-6A15-41E1-BF3A-8837DD8211B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0E308E26-6A15-41E1-BF3A-8837DD8211B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E308E26-6A15-41E1-BF3A-8837DD8211B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
