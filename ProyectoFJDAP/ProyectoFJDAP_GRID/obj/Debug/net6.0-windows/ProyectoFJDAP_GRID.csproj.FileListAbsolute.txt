@@ -44,3 +44,5 @@ C:\Users\fjdap\Documents\GitHub\interfaces_FcoJavier_del_Ama\ProyectoFJDAP\Proye
 C:\Users\fjdap\Documents\GitHub\interfaces_FcoJavier_del_Ama\ProyectoFJDAP\ProyectoFJDAP_GRID\obj\Debug\net6.0-windows\ProyectoFJDAP_GRID_Content.g.cs
 C:\Users\fjdap\Documents\GitHub\interfaces_FcoJavier_del_Ama\ProyectoFJDAP\ProyectoFJDAP_GRID\obj\Debug\net6.0-windows\VentanaFormulario.g.cs
 C:\Users\fjdap\Documents\GitHub\interfaces_FcoJavier_del_Ama\ProyectoFJDAP\ProyectoFJDAP_GRID\obj\Debug\net6.0-windows\VentanaFormulario.baml
+C:\Users\fjdap\Documents\GitHub\interfaces_FcoJavier_del_Ama\ProyectoFJDAP\ProyectoFJDAP_GRID\obj\Debug\net6.0-windows\VentanaNuevoRegistro.g.cs
+C:\Users\fjdap\Documents\GitHub\interfaces_FcoJavier_del_Ama\ProyectoFJDAP\ProyectoFJDAP_GRID\obj\Debug\net6.0-windows\VentanaNuevoRegistro.baml

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\fjdap\Documents\GitHub\interfaces_FcoJavier_del_Ama\ProyectoFJDAP\ProyectoFJDAP_GRID\App.xaml
-21411003680
+31483844270
 11914321959
-6-179287561
+7-833072580
 194101785492
-MainWindow.xaml;VentanaFormulario.xaml;
+MainWindow.xaml;VentanaFormulario.xaml;VentanaNuevoRegistro.xaml;
 
 True
 

@@ -1,0 +1,34 @@
+﻿<Window x:Class="ProyectoFJDAP_GRID.VentanaNuevoRegistro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProyectoFJDAP_GRID"
+        mc:Ignorable="d"
+        Title="VentanaNuevoRegistro" Height="600" Width="1000" ResizeMode="NoResize">
+    <Border>
+        <Grid Background="#FF0B1047">
+            <Image HorizontalAlignment="Left" Height="516" Margin="25,36,0,0" VerticalAlignment="Top" Width="493" Source="/LogoFormulario.JPG"/>
+            <Label Content="Registro Usuario" HorizontalAlignment="Left" Margin="619,98,0,0" VerticalAlignment="Top" Height="61" Width="263" FontFamily="Rockwell Condensed" FontSize="48" Foreground="#FFE2D4D4"/>
+            <Label Content="Nombre" HorizontalAlignment="Left" Margin="569,185,0,0" VerticalAlignment="Top" Height="47" Width="100" Foreground="#FFD9B8B8" FontSize="20"/>
+            <Label Content="Apellidos" HorizontalAlignment="Left" Margin="569,244,0,0" VerticalAlignment="Top" Height="38" Width="117" Foreground="#FFD9B8B8" FontSize="20"/>
+            <Rectangle HorizontalAlignment="Left" Height="39" Margin="686,189,0,0" Stroke="Black" VerticalAlignment="Top" Width="220" Fill="#FF092540"/>
+            <Button Content="ALTA" HorizontalAlignment="Left" Margin="542,448,0,0" VerticalAlignment="Top" Height="50" Width="242" Background="#FF932A1B" BorderBrush="#FFF3EDED" Foreground="#FFDFD1D1" FontSize="22"/>
+            <TextBox HorizontalAlignment="Left" Margin="697,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" Background="#FF092540" TextChanged="TextBox_TextChanged" SelectionTextBrush="#FF1AACE5" BorderBrush="#FF0938C8" Height="22"/>
+            <Label Content="¿Olvidaste la contraseña?" HorizontalAlignment="Left" Margin="574,517,0,0" VerticalAlignment="Top" Width="201" FontSize="16"/>
+            <Button Content="SALIR" HorizontalAlignment="Left" Margin="815,25,0,0" VerticalAlignment="Top" Height="48" Width="133" Background="#FFE25E5E" FontSize="16" Foreground="#FFF1E7E7" FontFamily="Rockwell" BorderBrush="#FFE3EF59"/>
+            <Rectangle HorizontalAlignment="Left" Height="486" Margin="25,43,0,0" Stroke="Black" VerticalAlignment="Top" Width="493"/>
+            <Label Content="Email" HorizontalAlignment="Left" Margin="569,292,0,0" VerticalAlignment="Top" Height="38" Width="117" Foreground="#FFD9B8B8" FontSize="20"/>
+            <Label Content="Sexo&#xD;&#xA;" HorizontalAlignment="Left" Margin="569,340,0,0" VerticalAlignment="Top" Height="38" Width="117" Foreground="#FFD9B8B8" FontSize="20"/>
+            <RadioButton Content="Masculino" HorizontalAlignment="Left" Margin="708,352,0,0" VerticalAlignment="Top" FontSize="16" Foreground="#FF9F5252"/>
+            <RadioButton Content="Femenino" HorizontalAlignment="Left" Margin="839,352,0,0" VerticalAlignment="Top" FontSize="16" Foreground="#FF9F9F52"/>
+            <Rectangle HorizontalAlignment="Left" Height="39" Margin="686,296,0,0" Stroke="Black" VerticalAlignment="Top" Width="220" Fill="#FF092540"/>
+            <Rectangle HorizontalAlignment="Left" Height="39" Margin="686,244,0,0" Stroke="Black" VerticalAlignment="Top" Width="220" Fill="#FF092540"/>
+            <TextBox HorizontalAlignment="Left" Margin="697,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" Background="#FF092540" TextChanged="TextBox_TextChanged" SelectionTextBrush="#FF1AACE5" BorderBrush="#FF0938C8" Height="22"/>
+            <TextBox HorizontalAlignment="Left" Margin="697,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" Background="#FF092540" TextChanged="TextBox_TextChanged" SelectionTextBrush="#FF1AACE5" BorderBrush="#FF0938C8" Height="22"/>
+
+
+        </Grid>
+
+    </Border>
+</Window>

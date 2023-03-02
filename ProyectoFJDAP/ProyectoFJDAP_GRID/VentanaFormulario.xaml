@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoFJDAP_GRID"
         mc:Ignorable="d"
-        Title="VentanaFormulario" Height="600" Width="1000">
+        Title="VentanaFormulario" Height="600" Width="1000" ResizeMode="NoResize">
     <Border>
         <Grid Background="#FF0B1047">
             <Image HorizontalAlignment="Left" Height="516" Margin="25,36,0,0" VerticalAlignment="Top" Width="493" Source="/LogoFormulario.JPG"/>
-            <Label Content="Nuevo Usuario&#xD;&#xA;" HorizontalAlignment="Left" Margin="619,78,0,0" VerticalAlignment="Top" Height="57" Width="244" FontFamily="Rockwell Condensed" FontSize="48" Foreground="#FFE2D4D4"/>
+            <Label Content="Acceso Usuario" HorizontalAlignment="Left" Margin="619,98,0,0" VerticalAlignment="Top" Height="57" Width="244" FontFamily="Rockwell Condensed" FontSize="48" Foreground="#FFE2D4D4"/>
             <Label Content="Usuario&#xD;&#xA;" HorizontalAlignment="Left" Margin="569,185,0,0" VerticalAlignment="Top" Height="47" Width="100" Foreground="#FFD9B8B8" FontSize="22"/>
             <Label Content="Contraseña&#xD;&#xA;" HorizontalAlignment="Left" Margin="569,292,0,0" VerticalAlignment="Top" Height="48" Width="140" Foreground="#FFD9B8B8" FontSize="22"/>
             <Rectangle HorizontalAlignment="Left" Height="55" Margin="542,237,0,0" Stroke="Black" VerticalAlignment="Top" Width="242" Fill="#FF092540"/>

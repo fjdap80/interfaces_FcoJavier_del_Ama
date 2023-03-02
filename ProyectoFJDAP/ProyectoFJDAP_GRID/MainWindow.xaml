@@ -24,16 +24,16 @@
         </Grid.ColumnDefinitions>
 
         <TextBlock Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" Width="258" Margin="0,15,0,0" VerticalAlignment="Top" Height="20" FontStyle="Italic" FontSize="14" FontWeight="Bold" FontFamily="Segoe Print">TODO EL PODER EN TUS MANOS</TextBlock>
-        <TextBlock Grid.Row="0"  FontSize="48" FontFamily="Niagara Solid" FontWeight="Bold" Margin="175,42,0,71" HorizontalAlignment="Left" Width="482" Grid.ColumnSpan="3">INSIGHTS PLATAFORMA VIDEOJUEGOS
+        <TextBlock Grid.Row="0"  FontSize="48" FontFamily="Niagara Solid" FontWeight="Bold" Margin="189,44,0,69" HorizontalAlignment="Left" Width="470" Grid.ColumnSpan="3">INSIGHTS PLATAFORMA VIDEOJUEGOS
         </TextBlock>
         <TextBlock Grid.Row="0"  FontSize="60" FontFamily="Niagara Engraved" Height="53" HorizontalAlignment="Center" VerticalAlignment="Top" Width="82" Margin="0,95,0,0" FontWeight="Bold">XBOX</TextBlock>
 
 
         <Button Content="ACCESO A LA TIENDA"  Background="LightGreen" BorderBrush="red" BorderThickness="3" 
          Grid.Column="1" Width="154"  HorizontalAlignment="Center"  FontSize="18" FontFamily="Bahnschrift SemiBold Condensed" VerticalAlignment="Top" Height="30" Margin="0,95,0,0" Click="Button_Click"/>
-        <Button Content="REGISTRO NUEVOS USUARIOS"  Background="LightBlue" BorderBrush="red" BorderThickness="3" 
+        <Button Content="REGISTRO"  Background="LightBlue" BorderBrush="red" BorderThickness="3" 
          Grid.Column="2" Width="150"  HorizontalAlignment="Left"  FontSize="15" FontFamily="Bahnschrift SemiBold Condensed" VerticalAlignment="Top" Height="30" Margin="30,20,0,0" Click="Button_Click"/>
-        <Button Content="CONÓCENOS"  Background="LightBlue" BorderBrush="red" BorderThickness="3" 
+        <Button Content="ACCESO USUARIOS"  Background="LightBlue" BorderBrush="red" BorderThickness="3" 
          Grid.Column="2" Width="150"  HorizontalAlignment="Left"  FontSize="15" FontFamily="Bahnschrift SemiBold Condensed" VerticalAlignment="Top" Height="30" Margin="29,60,0,0" Click="Button_Click"/>
         <Image Source="/image/sega.jpg" Margin="130,125,0,140" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="455" Grid.Column="1" Grid.RowSpan="2"/>
         <Image Height="500"  Margin="5,10,400,0" Grid.Row="1" VerticalAlignment="Top" Source="/xbox.jpg" Grid.ColumnSpan="2"/>
