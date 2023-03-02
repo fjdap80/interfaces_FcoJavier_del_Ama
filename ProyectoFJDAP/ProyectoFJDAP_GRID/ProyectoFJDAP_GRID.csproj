@@ -9,10 +9,12 @@
 
   <ItemGroup>
     <None Remove="image\sega.jpg" />
+    <None Remove="LogoFormulario.JPG" />
     <None Remove="movil.jpg" />
     <None Remove="nintendoRetro.jpg" />
     <None Remove="ps5.jpg" />
     <None Remove="robot.jpg" />
+    <None Remove="Salir.JPG" />
     <None Remove="xbox.jpg" />
   </ItemGroup>
 
@@ -23,10 +25,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="LogoFormulario.JPG" />
     <Resource Include="movil.jpg" />
     <Resource Include="nintendoRetro.jpg" />
     <Resource Include="ps5.jpg" />
     <Resource Include="robot.jpg" />
+    <Resource Include="Salir.JPG" />
     <Resource Include="xbox.jpg" />
   </ItemGroup>
 
