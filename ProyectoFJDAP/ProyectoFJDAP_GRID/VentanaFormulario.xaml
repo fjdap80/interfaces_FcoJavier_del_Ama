@@ -14,12 +14,12 @@
             <Label Content="Contraseña&#xD;&#xA;" HorizontalAlignment="Left" Margin="569,292,0,0" VerticalAlignment="Top" Height="48" Width="140" Foreground="#FFD9B8B8" FontSize="22"/>
             <Rectangle HorizontalAlignment="Left" Height="55" Margin="542,237,0,0" Stroke="Black" VerticalAlignment="Top" Width="242" Fill="#FF092540"/>
             <Button Content="Iniciar sesión" HorizontalAlignment="Left" Margin="542,448,0,0" VerticalAlignment="Top" Height="50" Width="242" Background="#FF7C22D0" BorderBrush="#FFF3EDED" Foreground="#FFDFD1D1" FontSize="22" IsDefault="True"/>
-            <TextBox HorizontalAlignment="Left" Margin="551,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="224" Background="#FF092540" TextChanged="TextBox_TextChanged" SelectionTextBrush="#FF1AACE5" BorderBrush="#FF0938C8" Height="36"/>
-            <Label Content="¿Olvidaste la contraseña?" HorizontalAlignment="Left" Margin="574,517,0,0" VerticalAlignment="Top" Width="201" FontSize="16"/>
-            <Button HorizontalAlignment="Left" Margin="695,25,0,0" VerticalAlignment="Top" Height="68" Width="253" Background="#FFE25E5E" FontSize="16" Foreground="#FFF1E7E7" FontFamily="Rockwell" BorderBrush="#FFE3EF59" IsDefault="True" RenderTransformOrigin="0.313,0.395">
-                <StackPanel Height="58" Width="248">
-                    <TextBlock TextWrapping="Wrap" Width="89" HorizontalAlignment="Left" Margin="30,0,0,0" Height="32"><Run Language="es-es" Text="SALIR"/><LineBreak/><Run Language="es-es"/></TextBlock>
-                    <Image Height="62" Width="75" Source="/Salir.JPG" HorizontalAlignment="Right"/>
+            <TextBox HorizontalAlignment="Left" Margin="551,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="224" Background="#FF092540"  SelectionTextBrush="#FF1AACE5" BorderBrush="#FF0938C8" Height="36"/>
+            <Label Content="¿Olvidaste la contraseña?" HorizontalAlignment="Left" Margin="574,517,0,0" VerticalAlignment="Top" Width="201" FontSize="16" Foreground="#FFEDB4B4"/>
+            <Button HorizontalAlignment="Left" Margin="695,25,0,0" VerticalAlignment="Top" Height="68" Width="253" Background="#FFE25E5E" FontSize="16" Foreground="#FFF1E7E7" FontFamily="Rockwell" BorderBrush="#FFE3EF59" IsDefault="True" RenderTransformOrigin="0.313,0.395" Click="Button_Click_SALIR">
+                <StackPanel Height="58" Width="248" Orientation="Horizontal">
+                    <TextBlock TextWrapping="Wrap" Width="106" Margin="30,0,0,0" Height="46" FontSize="36"><Run Language="es-es" Text="SALIR"/><LineBreak/><Run Language="es-es"/></TextBlock>
+                    <Image Height="53" Width="71" Source="/Salir.JPG" Margin="30,0,0,0" HorizontalAlignment="Right"/>
                 </StackPanel>
             </Button>
             <Rectangle HorizontalAlignment="Left" Height="486" Margin="25,43,0,0" Stroke="Black" VerticalAlignment="Top" Width="493"/>

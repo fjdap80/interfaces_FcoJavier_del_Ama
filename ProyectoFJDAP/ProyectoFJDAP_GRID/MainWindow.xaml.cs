@@ -33,5 +33,13 @@ namespace ProyectoFJDAP_GRID
             this.Close();
             ventanaFormulario.Show();
         }
+
+        private void Button_Click_Registro(object sender, RoutedEventArgs e)
+        {
+            VentanaNuevoRegistro VentanaNuevoRegistro = new VentanaNuevoRegistro();
+            this.Close();
+            VentanaNuevoRegistro.Show();
+
+        }
     }
 }

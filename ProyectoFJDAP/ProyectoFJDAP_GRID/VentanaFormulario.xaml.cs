@@ -22,11 +22,14 @@ namespace ProyectoFJDAP_GRID
         public VentanaFormulario()
         {
             InitializeComponent();
-        }
+        }      
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+       
+          
+
+        private void Button_Click_SALIR(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("VAS A SALIR DE TU ÁREA!");
         }
     }
 }

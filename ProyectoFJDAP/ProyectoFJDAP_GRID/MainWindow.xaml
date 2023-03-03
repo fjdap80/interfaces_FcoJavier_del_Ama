@@ -32,27 +32,26 @@
         <Button Content="ACCESO A LA TIENDA"  Background="LightGreen" BorderBrush="red" BorderThickness="3" 
          Grid.Column="1" Width="154"  HorizontalAlignment="Center"  FontSize="18" FontFamily="Bahnschrift SemiBold Condensed" VerticalAlignment="Top" Height="30" Margin="0,95,0,0" Click="Button_Click"/>
         <Button Content="REGISTRO"  Background="LightBlue" BorderBrush="red" BorderThickness="3" 
-         Grid.Column="2" Width="150"  HorizontalAlignment="Left"  FontSize="15" FontFamily="Bahnschrift SemiBold Condensed" VerticalAlignment="Top" Height="30" Margin="30,20,0,0" Click="Button_Click"/>
+         Grid.Column="2" Width="150"  HorizontalAlignment="Left"  FontSize="15" FontFamily="Bahnschrift SemiBold Condensed" VerticalAlignment="Top" Height="30" Margin="30,20,0,0" Click="Button_Click_Registro"/>
         <Button Content="ACCESO USUARIOS"  Background="LightBlue" BorderBrush="red" BorderThickness="3" 
          Grid.Column="2" Width="150"  HorizontalAlignment="Left"  FontSize="15" FontFamily="Bahnschrift SemiBold Condensed" VerticalAlignment="Top" Height="30" Margin="29,60,0,0" Click="Button_Click"/>
-        <Image Source="/image/sega.jpg" Margin="120,125,0,140" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="465" Grid.Column="1" Grid.RowSpan="2"/>
-        <Image Height="500"  Margin="5,10,382,0" Grid.Row="1" VerticalAlignment="Top" Source="/xbox.jpg" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <Image Source="/image/sega.jpg" Margin="86,127,0,138" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="465" Grid.Column="1" Grid.RowSpan="2"/>
+        <Image  Margin="5,10,382,53" Grid.Row="1" Source="/xbox.jpg" Grid.ColumnSpan="2"/>
         <Button Grid.Column="1" Content="PS5" HorizontalAlignment="Left" Margin="40,350,0,0" Grid.Row="1" VerticalAlignment="Top" Height="46" Width="74" Background="#FFD8B4B4" BorderBrush="#FF122848" FontFamily="Niagara Engraved" FontSize="36"/>
         <Image Grid.Column="1" HorizontalAlignment="Left" Height="147" Margin="120,350,0,0" Grid.Row="1" VerticalAlignment="Top" Width="278" Source="/ps5.jpg"/>
-        <Image Grid.Column="2" HorizontalAlignment="Center" Height="110" Margin="0,324,5,0" Grid.Row="1" VerticalAlignment="Center" Width="170" Source="/robot.jpg"/>
-        <Button Content="ANDROID E IOS" HorizontalAlignment="Left" Margin="10,432,0,0" Grid.Row="1" VerticalAlignment="Top" Height="40" Width="150" Background="#FF81E789" BorderBrush="#FF110909" FontFamily="Niagara Engraved" FontSize="36"/>
+        <Image Grid.Column="2" HorizontalAlignment="Left" Height="110" Margin="7,361,0,0" Grid.Row="1" VerticalAlignment="Top" Width="170" Source="/robot.jpg"/>
+        <Button Content="ANDROID E IOS" HorizontalAlignment="Left" Margin="29,444,0,0" Grid.Row="1" VerticalAlignment="Top" Height="40" Width="150" Background="#FF81E789" BorderBrush="#FF110909" FontFamily="Niagara Engraved" FontSize="36"/>
         <Button Grid.Column="1" Content="NINTENDO-RETRO" Margin="400,5
                 ,0,0" Grid.Row="2" VerticalAlignment="Top" Height="41" Width="174" Grid.ColumnSpan="2" Background="#FFABC9E6" BorderBrush="#FF092206" HorizontalAlignment="Left" FontSize="36" FontFamily="Niagara Engraved"/>
-        <Image Grid.Column="1" HorizontalAlignment="Left" Height="268" Margin="259,50,0,0" Grid.Row="2" VerticalAlignment="Top" Width="420" Grid.ColumnSpan="2" Source="/nintendoRetro.jpg"/>
-        <Image Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="255" Margin="10,0,0,40
-               " Grid.Row="1" VerticalAlignment="Bottom" Width="400" Source="/movil.jpg" Grid.RowSpan="2"/>
+        <Image Grid.Column="1" HorizontalAlignment="Left" Height="262" Margin="259,51,0,0" Grid.Row="2" VerticalAlignment="Top" Width="420" Grid.ColumnSpan="2" Source="/nintendoRetro.jpg"/>
+        <Image Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="255" Margin="10,0,0,0" Grid.Row="2" VerticalAlignment="Center" Width="400" Source="/movil.jpg"/>
 
         <Grid.RowDefinitions>
 
 
-            <RowDefinition Height="142*"></RowDefinition>
-            <RowDefinition Height="447*"></RowDefinition>
-            <RowDefinition Height="295*"></RowDefinition>
+            <RowDefinition Height="79*"></RowDefinition>
+            <RowDefinition Height="250*"></RowDefinition>
+            <RowDefinition Height="163*"></RowDefinition>
 
 
         </Grid.RowDefinitions>
