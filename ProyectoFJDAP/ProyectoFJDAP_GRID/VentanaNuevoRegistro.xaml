@@ -9,14 +9,13 @@
     <Border>
         <Grid Background="#FF0B1047">
             <Image HorizontalAlignment="Left" Height="516" Margin="25,36,0,0" VerticalAlignment="Top" Width="493" Source="/LogoFormulario.JPG"/>
-            <Label Content="Registro Usuario" HorizontalAlignment="Left" Margin="619,98,0,0" VerticalAlignment="Top" Height="61" Width="263" FontFamily="Rockwell Condensed" FontSize="48" Foreground="#FFE2D4D4"/>
+            <Label Content="Registro Usuario" HorizontalAlignment="Left" Margin="619,98,0,0" VerticalAlignment="Top" Height="68" Width="263" FontFamily="Rockwell Condensed" FontSize="48" Foreground="#FFE2D4D4"/>
             <Label Content="Nombre" HorizontalAlignment="Left" Margin="569,185,0,0" VerticalAlignment="Top" Height="47" Width="100" Foreground="#FFD9B8B8" FontSize="20"/>
             <Label Content="Apellidos" HorizontalAlignment="Left" Margin="569,244,0,0" VerticalAlignment="Top" Height="38" Width="117" Foreground="#FFD9B8B8" FontSize="20"/>
             <Rectangle HorizontalAlignment="Left" Height="39" Margin="686,189,0,0" Stroke="Black" VerticalAlignment="Top" Width="220" Fill="#FF092540"/>
-            <Button Content="ALTA" HorizontalAlignment="Left" Margin="542,448,0,0" VerticalAlignment="Top" Height="50" Width="242" Background="#FF932A1B" BorderBrush="#FFF3EDED" Foreground="#FFDFD1D1" FontSize="22"/>
-            <TextBox HorizontalAlignment="Left" Margin="697,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" Background="#FF092540" TextChanged="TextBox_TextChanged" SelectionTextBrush="#FF1AACE5" BorderBrush="#FF0938C8" Height="22"/>
-            <Label Content="¿Olvidaste la contraseña?" HorizontalAlignment="Left" Margin="574,517,0,0" VerticalAlignment="Top" Width="201" FontSize="16"/>
-            <Button Content="SALIR" HorizontalAlignment="Left" Margin="815,25,0,0" VerticalAlignment="Top" Height="48" Width="133" Background="#FFE25E5E" FontSize="16" Foreground="#FFF1E7E7" FontFamily="Rockwell" BorderBrush="#FFE3EF59"/>
+            <Button Content="ALTA" HorizontalAlignment="Left" Margin="675,459,0,0" VerticalAlignment="Top" Height="50" Width="242" Background="#FF932A1B" BorderBrush="#FFF3EDED" Foreground="#FFDFD1D1" FontSize="22" IsDefault="True"/>
+            <TextBox HorizontalAlignment="Left" Margin="697,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" Background="#FF092540" TextChanged="TextBox_TextChanged" SelectionTextBrush="#FF1AACE5" BorderBrush="#FF0938C8" Height="22" AcceptsReturn="True"/>
+            <Button Content="SALIR" HorizontalAlignment="Left" Margin="815,25,0,0" VerticalAlignment="Top" Height="48" Width="133" Background="#FFE25E5E" FontSize="16" Foreground="#FFF1E7E7" FontFamily="Rockwell" BorderBrush="#FFE3EF59" IsDefault="True"/>
             <Rectangle HorizontalAlignment="Left" Height="486" Margin="25,43,0,0" Stroke="Black" VerticalAlignment="Top" Width="493"/>
             <Label Content="Email" HorizontalAlignment="Left" Margin="569,292,0,0" VerticalAlignment="Top" Height="38" Width="117" Foreground="#FFD9B8B8" FontSize="20"/>
             <Label Content="Sexo&#xD;&#xA;" HorizontalAlignment="Left" Margin="569,340,0,0" VerticalAlignment="Top" Height="38" Width="117" Foreground="#FFD9B8B8" FontSize="20"/>
@@ -26,6 +25,9 @@
             <Rectangle HorizontalAlignment="Left" Height="39" Margin="686,244,0,0" Stroke="Black" VerticalAlignment="Top" Width="220" Fill="#FF092540"/>
             <TextBox HorizontalAlignment="Left" Margin="697,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" Background="#FF092540" TextChanged="TextBox_TextChanged" SelectionTextBrush="#FF1AACE5" BorderBrush="#FF0938C8" Height="22"/>
             <TextBox HorizontalAlignment="Left" Margin="697,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" Background="#FF092540" TextChanged="TextBox_TextChanged" SelectionTextBrush="#FF1AACE5" BorderBrush="#FF0938C8" Height="22"/>
+            <CheckBox Content="Acepto términos y condiciones" HorizontalAlignment="Left" Margin="679,533,0,0" VerticalAlignment="Top" Height="32" Width="238" RenderTransformOrigin="0.024,0.992" Foreground="#FFDED9D9" FontSize="18" FontFamily="Arial Narrow" IsChecked="True"/>
+            <Calendar HorizontalAlignment="Left" Margin="691,391,0,0" VerticalAlignment="Top" Height="31" Width="215"/>
+            <Label Content="Fecha Nac." HorizontalAlignment="Left" Margin="569,393,0,0" VerticalAlignment="Top" Height="38" Width="117" Foreground="#FFD9B8B8" FontSize="20"/>
 
 
         </Grid>

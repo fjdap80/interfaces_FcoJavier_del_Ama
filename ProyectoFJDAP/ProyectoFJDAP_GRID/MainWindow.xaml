@@ -35,8 +35,8 @@
          Grid.Column="2" Width="150"  HorizontalAlignment="Left"  FontSize="15" FontFamily="Bahnschrift SemiBold Condensed" VerticalAlignment="Top" Height="30" Margin="30,20,0,0" Click="Button_Click"/>
         <Button Content="ACCESO USUARIOS"  Background="LightBlue" BorderBrush="red" BorderThickness="3" 
          Grid.Column="2" Width="150"  HorizontalAlignment="Left"  FontSize="15" FontFamily="Bahnschrift SemiBold Condensed" VerticalAlignment="Top" Height="30" Margin="29,60,0,0" Click="Button_Click"/>
-        <Image Source="/image/sega.jpg" Margin="130,125,0,140" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="455" Grid.Column="1" Grid.RowSpan="2"/>
-        <Image Height="500"  Margin="5,10,400,0" Grid.Row="1" VerticalAlignment="Top" Source="/xbox.jpg" Grid.ColumnSpan="2"/>
+        <Image Source="/image/sega.jpg" Margin="120,125,0,140" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="465" Grid.Column="1" Grid.RowSpan="2"/>
+        <Image Height="500"  Margin="5,10,382,0" Grid.Row="1" VerticalAlignment="Top" Source="/xbox.jpg" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
         <Button Grid.Column="1" Content="PS5" HorizontalAlignment="Left" Margin="40,350,0,0" Grid.Row="1" VerticalAlignment="Top" Height="46" Width="74" Background="#FFD8B4B4" BorderBrush="#FF122848" FontFamily="Niagara Engraved" FontSize="36"/>
         <Image Grid.Column="1" HorizontalAlignment="Left" Height="147" Margin="120,350,0,0" Grid.Row="1" VerticalAlignment="Top" Width="278" Source="/ps5.jpg"/>
         <Image Grid.Column="2" HorizontalAlignment="Center" Height="110" Margin="0,324,5,0" Grid.Row="1" VerticalAlignment="Center" Width="170" Source="/robot.jpg"/>
