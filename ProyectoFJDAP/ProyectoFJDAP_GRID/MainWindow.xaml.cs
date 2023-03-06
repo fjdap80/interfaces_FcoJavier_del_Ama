@@ -27,7 +27,7 @@ namespace ProyectoFJDAP_GRID
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //MessageBox.Show("ACCESO EXCLUSIVO A CLIENTES!");
+            
 
             VentanaFormulario ventanaFormulario= new VentanaFormulario();
             this.Close();

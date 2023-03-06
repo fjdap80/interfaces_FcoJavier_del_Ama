@@ -15,7 +15,7 @@
             <Rectangle HorizontalAlignment="Left" Height="39" Margin="686,189,0,0" Stroke="Black" VerticalAlignment="Top" Width="220" Fill="#FF092540"/>
             <Button Content="ALTA" HorizontalAlignment="Left" Margin="675,459,0,0" VerticalAlignment="Top" Height="50" Width="242" Background="#FF932A1B" BorderBrush="#FFF3EDED" Foreground="#FFDFD1D1" FontSize="22" IsDefault="True"/>
             <TextBox HorizontalAlignment="Left" Margin="697,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" Background="#FF092540"  SelectionTextBrush="#FF1AACE5" BorderBrush="#FF0938C8" Height="22" AcceptsReturn="True"/>
-            <Button Content="SALIR" HorizontalAlignment="Left" Margin="815,25,0,0" VerticalAlignment="Top" Height="48" Width="133" Background="#FFE25E5E" FontSize="16" Foreground="#FFF1E7E7" FontFamily="Rockwell" BorderBrush="#FFE3EF59" IsDefault="True"/>
+            <Button Content="SALIR" HorizontalAlignment="Left" Margin="815,25,0,0" VerticalAlignment="Top" Height="48" Width="133" Background="#FFE25E5E" FontSize="16" Foreground="#FFF1E7E7" FontFamily="Rockwell" BorderBrush="#FFE3EF59" IsDefault="True" Click="Button_Click_VOLVER_Inicio"/>
             <Rectangle HorizontalAlignment="Left" Height="486" Margin="25,43,0,0" Stroke="Black" VerticalAlignment="Top" Width="493"/>
             <Label Content="Email" HorizontalAlignment="Left" Margin="569,292,0,0" VerticalAlignment="Top" Height="38" Width="117" Foreground="#FFD9B8B8" FontSize="20"/>
             <Label Content="Sexo&#xD;&#xA;" HorizontalAlignment="Left" Margin="569,340,0,0" VerticalAlignment="Top" Height="38" Width="117" Foreground="#FFD9B8B8" FontSize="20"/>

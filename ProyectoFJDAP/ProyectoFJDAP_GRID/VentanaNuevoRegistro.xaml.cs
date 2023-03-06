@@ -23,5 +23,18 @@ namespace ProyectoFJDAP_GRID
         {
             InitializeComponent();
         }
+
+        private void Button_Click_Volver(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_VOLVER_Inicio(object sender, RoutedEventArgs e)
+        {
+
+            MainWindow MainWindow = new MainWindow();
+            this.Close();
+            MainWindow.Show();
+        }
     }
 }

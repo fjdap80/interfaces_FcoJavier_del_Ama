@@ -1,0 +1,6 @@
+C:\Users\fjdap\Documents\GitHub\interfaces_FcoJavier_del_Ama\ProyectoFJDAP\ProyectoFJDAP_GRID\bin\Release\net6.0-windows\publish\ProyectoFJDAP_GRID.exe
+C:\Users\fjdap\Documents\GitHub\interfaces_FcoJavier_del_Ama\ProyectoFJDAP\ProyectoFJDAP_GRID\bin\Release\net6.0-windows\publish\image\sega.jpg
+C:\Users\fjdap\Documents\GitHub\interfaces_FcoJavier_del_Ama\ProyectoFJDAP\ProyectoFJDAP_GRID\bin\Release\net6.0-windows\publish\ProyectoFJDAP_GRID.dll
+C:\Users\fjdap\Documents\GitHub\interfaces_FcoJavier_del_Ama\ProyectoFJDAP\ProyectoFJDAP_GRID\bin\Release\net6.0-windows\publish\ProyectoFJDAP_GRID.deps.json
+C:\Users\fjdap\Documents\GitHub\interfaces_FcoJavier_del_Ama\ProyectoFJDAP\ProyectoFJDAP_GRID\bin\Release\net6.0-windows\publish\ProyectoFJDAP_GRID.runtimeconfig.json
+C:\Users\fjdap\Documents\GitHub\interfaces_FcoJavier_del_Ama\ProyectoFJDAP\ProyectoFJDAP_GRID\bin\Release\net6.0-windows\publish\ProyectoFJDAP_GRID.pdb
